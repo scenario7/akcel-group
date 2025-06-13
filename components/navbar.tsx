@@ -11,7 +11,7 @@ const openSans = Open_Sans({
 const navbar = () => {
   return (
     <div className="flex flex-col">
-      <div className={`flex justify-between bg-white px-10`}>
+      <div className={`flex justify-between bg-[#ffffff] px-10`}>
         <Image src={redLogo.src} alt="" height={50} width={200} />
         <div className={`flex space-x-10 items-center ${openSans.className} text-black font-semibold tracking-tight`}>
             <a href="">About Us</a>

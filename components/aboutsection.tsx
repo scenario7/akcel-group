@@ -2,7 +2,6 @@
 import React from "react";
 import { Montserrat, Open_Sans } from "next/font/google";
 
-
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -30,7 +29,10 @@ const countries = [
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col items-center p-10 bg-white">
+    <div className="flex flex-col items-center p-10 bg-[#ffffff]">
+      <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5">
+
+      </div>
       <h1
         className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
       >
@@ -62,7 +64,7 @@ const AboutSection = () => {
           className="rounded-full w-20 h-20 object-cover"
         />
       </div>
-            <p
+      <p
         className={`${openSans.className} text-center text-lg mt-4 w-3/4 text-black`}
       >
         The group has footprints in the United Kingdom, the UAE and India.
@@ -70,6 +72,7 @@ const AboutSection = () => {
         Kaushal, the group boasts of more than a dozen businesses spread across
         the UK, UAE and India.
       </p>
+
     </div>
   );
 };

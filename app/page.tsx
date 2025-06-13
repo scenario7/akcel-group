@@ -1,7 +1,8 @@
 import NavBar from "@/components/navbar";
 import HeroSection from "@/components/herosection";
 import AboutSection from "@/components/aboutsection";
-import Abbreviation from "@/components/abbreviation";
+import Companies from "@/components/companies";
+import CustomFooter from "@/components/customfooter";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <NavBar/>
       <HeroSection />
       <AboutSection/>
-      <Abbreviation/>
+      <Companies/>
+      <CustomFooter/>
     </div>
   );
 }

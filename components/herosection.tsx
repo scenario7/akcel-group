@@ -54,7 +54,7 @@ const HeroSection = () => {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-white/80 opacity-100 -z-5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-black/50 to-white opacity-100 -z-5" />
 
       {/* Rotating Text */}
       <div className="absolute flex justify-center text-white top-[40%] text-center items-center w-full">

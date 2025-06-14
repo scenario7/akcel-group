@@ -38,16 +38,7 @@ const AboutSection = () => {
       >
         About Us
       </h1>
-      <p
-        className={`${openSans.className} text-center text-lg mt-4 w-3/4 text-black`}
-      >
-        AKCEL Group is a UK-based diversified global enterprise with a bold
-        vision and a broad portfolio. Spanning real estate, education,
-        hospitality, motorsports, and technology, we are united by a single
-        mission — to accelerate ambition through innovation, precision, and
-        performance.
-      </p>
-      <div className="flex items-center space-x-20 py-10">
+            <div className="flex items-center space-x-20 py-10">
         <img
           src={countries[0].flag}
           alt=""
@@ -64,6 +55,15 @@ const AboutSection = () => {
           className="rounded-full w-20 h-20 object-cover"
         />
       </div>
+      <p
+        className={`${openSans.className} text-center text-lg mt-4 w-3/4 text-black`}
+      >
+        AKCEL Group is a UK-based diversified global enterprise with a bold
+        vision and a broad portfolio. Spanning real estate, education,
+        hospitality, motorsports, and technology, we are united by a single
+        mission — to accelerate ambition through innovation, precision, and
+        performance.
+      </p>
       <p
         className={`${openSans.className} text-center text-lg mt-4 w-3/4 text-black`}
       >

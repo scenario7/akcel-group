@@ -3,6 +3,7 @@ import HeroSection from "@/components/herosection";
 import AboutSection from "@/components/aboutsection";
 import Companies from "@/components/companies";
 import CustomFooter from "@/components/customfooter";
+import Businesses from "@/components/businesses";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <NavBar/>
       <HeroSection />
       <AboutSection/>
+      <Businesses/>
       <Companies/>
       <CustomFooter/>
     </div>

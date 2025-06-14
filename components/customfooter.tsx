@@ -16,7 +16,7 @@ const CustomFooter = () => {
         <div
           className={`flex flex-col items-start text-left ${openSans.className} gap-2 text-white font-semibold tracking-tight`}
         >
-          <div className="flex items-center gap-2 justify-center text-xs">
+          <div className="flex items-start gap-2 justify-center text-xs">
             <img
               src="https://flagcdn.com/ae.svg"
               alt="UAE Flag"
@@ -24,7 +24,7 @@ const CustomFooter = () => {
             />
             <p className="">1107, Iris Bay, Business Bay Dubai, UAE 00000</p>
           </div>
-          <div className="flex items-center gap-2 justify-center text-xs">
+          <div className="flex items-start gap-2 justify-center text-xs">
             <img
               src="https://flagcdn.com/gb.svg"
               alt="UK Flag"
@@ -34,7 +34,7 @@ const CustomFooter = () => {
               14/2E Docklands Business Center 10-16, Tiller Road London, UK E14 8PX
             </p>
           </div>
-          <div className="flex items-center gap-2 justify-center text-xs">
+          <div className="flex items-start gap-2 justify-center text-xs">
             <img
               src="https://flagcdn.com/it.svg"
               alt="Italy Flag"
@@ -44,7 +44,7 @@ const CustomFooter = () => {
               Via Rassica 25c, Lonato del Garda, Brescia, Italy
             </p>
           </div>
-          <div className="flex items-center gap-2 justify-center text-xs">
+          <div className="flex items-start gap-2 justify-center text-xs">
             <img
               src="https://flagcdn.com/ie.svg"
               alt="Ireland Flag"

@@ -4,6 +4,7 @@ import AboutSection from "@/components/aboutsection";
 import CustomFooter from "@/components/customfooter";
 import Businesses from "@/components/businesses";
 import Leadership from "@/components/leadership";
+import Locations from "@/components/locations";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutSection />
       <Leadership/>
       <Businesses />
+      <Locations/>
       <CustomFooter />
     </div>
   );

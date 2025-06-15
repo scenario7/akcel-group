@@ -12,33 +12,17 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const countries = [
-  {
-    name: "United Kingdom",
-    flag: "https://flagcdn.com/w320/gb.png",
-  },
-  {
-    name: "United Arab Emirates",
-    flag: "https://flagcdn.com/w320/ae.png",
-  },
-  {
-    name: "India",
-    flag: "https://flagcdn.com/w320/in.png",
-  },
-];
 
 const AboutSection = () => {
   return (
     <div className="flex flex-col items-center p-10 bg-[#ffffff]">
-      <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5">
-
-      </div>
+      <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5"></div>
       <h1
         className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
       >
         About Us
       </h1>
-            <div className="flex items-center space-x-20 py-10">
+      {/* <div className="flex items-center space-x-20 py-10">
         <img
           src={countries[0].flag}
           alt=""
@@ -54,7 +38,7 @@ const AboutSection = () => {
           alt=""
           className="rounded-full w-20 h-20 object-cover"
         />
-      </div>
+      </div> */}
       <p
         className={`${openSans.className} text-center text-lg mt-4 w-3/4 text-black`}
       >
@@ -72,7 +56,6 @@ const AboutSection = () => {
         Kaushal, the group boasts of more than a dozen businesses spread across
         the UK, UAE and India.
       </p>
-
     </div>
   );
 };

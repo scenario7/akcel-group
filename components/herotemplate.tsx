@@ -27,7 +27,7 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent backdrop-blur-md"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent backdrop-blur-sm"></div>
       <h1 className={`${montserrat.className} font-bold text-white text-6xl uppercase relative z-10`}>
         {title}
       </h1>

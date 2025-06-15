@@ -30,7 +30,7 @@ const HeroSection = () => {
   }, [currentImage, images.length]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+<div className="relative w-full h-full overflow-hidden">
       {/* Crossfade Images */}
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         {/* Previous image fading out */}
@@ -54,7 +54,7 @@ const HeroSection = () => {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-black/50 to-white opacity-100 -z-5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black opacity-100 -z-5" />
 
       {/* Rotating Text */}
       <div className="absolute flex justify-center text-white top-[40%] text-center items-center w-full">
@@ -63,7 +63,7 @@ const HeroSection = () => {
           transition={{ type: "spring", duration: 0.6, damping: 20 }}
           className={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className} p-3`}
         >
-          Akcel Group |
+          AKCEL
         </motion.h1>
         <motion.div
           layout

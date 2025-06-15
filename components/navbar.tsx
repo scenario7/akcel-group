@@ -19,14 +19,14 @@ const openSans = Open_Sans({
 const Navbar = () => {
     return (
         <div className="flex flex-col">
-            <div className="flex justify-between bg-[#ffffff] px-10 items-center">
+            <div className="flex justify-between bg-[#000000] px-10 items-center">
             <Image src={redLogo.src} alt="" height={50} width={200} />
             <NavigationMenu>
-                <NavigationMenuList className={`space-x-4 ${openSans.className} text-black font-semibold tracking-tight`}>
+                <NavigationMenuList className={`space-x-4 ${openSans.className} text-white font-semibold tracking-tight`}>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={`${openSans.className} text-black bg-white font-semibold tracking-tight`}>About Us</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={`${openSans.className} text-white font-semibold tracking-tight`}>About Us</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                    <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-black tracking-tight`}>
+                    <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white tracking-tight`}>
                         <NavigationMenuLink href="/our-story">Our Story</NavigationMenuLink>
                         <NavigationMenuLink href="/leadership">Leadership</NavigationMenuLink>
                         <NavigationMenuLink href="/our-vision">Our Vision</NavigationMenuLink>
@@ -34,9 +34,9 @@ const Navbar = () => {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={`${openSans.className} text-black bg-white font-semibold tracking-tight`}>Businesses</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={`${openSans.className} text-white font-semibold tracking-tight`}>Businesses</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                    <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-black tracking-tight`}>
+                    <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white tracking-tight`}>
                         <NavigationMenuLink href="/businesses/motor-sports">Motor Sports</NavigationMenuLink>
                         <NavigationMenuLink href="/businesses/it-services">IT Services</NavigationMenuLink>
                         <NavigationMenuLink href="/businesses/entertainment-media">Entertainment and Media</NavigationMenuLink>
@@ -47,9 +47,9 @@ const Navbar = () => {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={`${openSans.className} text-black bg-white font-semibold tracking-tight`}>Our Brands</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={`${openSans.className} text-white font-semibold tracking-tight`}>Our Brands</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                    <div className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-black tracking-tight`}>
+                    <div className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white tracking-tight`}>
                         <NavigationMenuLink href="/brands/akcel-realty">Akcel Realty</NavigationMenuLink>
                         <NavigationMenuLink href="/brands/akcel-entertainment">Akcel Entertainment</NavigationMenuLink>
                         <NavigationMenuLink href="/brands/jetking-technologies">Jetking Technologies</NavigationMenuLink>

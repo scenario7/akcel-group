@@ -52,14 +52,14 @@ const Businesses = () => {
                   <img
                     src={company.logo.src}
                     alt={`${company.title} logo`}
-                    className="w-full h-full object-contain"
+                    className="h-36 object-contain"
                   />
                 </div>
 
 
                 <a
                   href={`companies/${company.slug}`}
-                  className={`${openSans.className} z-20 bg-transparent px-4 py-2 rounded-md font-medium flex items-center gap-2 transition-all ease-in-out duration-300 text-white hover:bg-white hover:text-[#da291c] shadow-lg mt-3 opacity-90`}
+                  className={`${openSans.className} z-20 text-black px-4 py-2 bg-white rounded-md font-medium flex items-center gap-2 transition-all ease-in-out duration-300 hover:bg-white hover:text-[#da291c] shadow-lg mt-3 opacity-90`}
                 >
                   Read More
                   <svg

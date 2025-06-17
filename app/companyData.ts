@@ -5,6 +5,18 @@ import akcelRealtyLogo from "@/images/realty.png";
 import remaxLogo from "@/images/remax.png";
 import akcelInvestmentsLogo from "@/images/investments.png";
 import akcelAcademyLogo from "@/images/academy.png";
+import remaxDisplay from '@/images/remaxDisplay.png'
+import gp1 from '@/images/GP/1.jpg'
+import gp2 from '@/images/GP/2.jpg'
+import gp3 from '@/images/GP/3.jpg'
+import gp4 from '@/images/GP/4.jpg'
+import gp5 from '@/images/GP/5.jpg'
+import gp6 from '@/images/GP/6.jpg'
+import gp7 from '@/images/GP/7.jpg'
+import gp8 from '@/images/GP/8.jpg'
+import gp9 from '@/images/GP/9.jpg'
+import gp10 from '@/images/GP/10.jpg'
+import gp11 from '@/images/GP/11.jpg'
 
 export const akcelCompanies = [
     {
@@ -17,12 +29,17 @@ Competing in the Formula Regional European Championship by Alpine (FRECA), the F
 With a clear mission to nurture young racing talent and compete at the highest levels, the team embodies the AKCEL Group's vision of innovation, ambition, and performance at the forefront of global racing.`,
         logo: akcelGpLogo,
         images: [
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80", // racing car
-            "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80", // motorsport
-            "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80", // racing helmet
-            "https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=800&q=80", // pit crew
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80", // race track
-            "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80", // racing driver
+            gp1.src,
+            gp2.src,
+            gp3.src,
+            gp4.src,
+            gp5.src,
+            gp6.src,
+            gp7.src,
+            gp8.src,
+            gp9.src,
+            gp10.src,
+            gp11.src,
         ],
         link: "https://akcelgp.com",
     },
@@ -84,14 +101,16 @@ Expanding its vision beyond traditional real estate, AKCEL Realty is also bringi
     {
         title: "RE/MAX India",
         slug: "remax-india",
-        description: `Standing as the country’s largest real estate entrepreneur community, with a network of 72+ offices and 684+ agents, RE/MAX India operates across 25+ states and covers 70% of India’s population.
+        description: `REMAX India stands as the LARGEST COMMUNITY OF REAL ESTATE entrepreneurs in the country, with a strong network of 72+ offices and 684+ agents working across 25+ states, serving about 70% of India's population.
 
-The company is redefining the real estate landscape with its innovative approach, industry expertise, and commitment to empowering entrepreneurs.
+Positioned at the forefront of the industry, REMAX India is revolutionizing the real estate market through its innovative business model, deep-rooted expertise, and commitment to empowering entrepreneurs.
 
-By fostering a dynamic ecosystem of professionals, RE/MAX India continues to set new benchmarks in real estate excellence and customer service.`,
+By cultivating a dynamic and collaborative ecosystem, the business keeps raising the bar for real estate excellence while offering unmatched support, training, and growth opportunities for its network of professionals.
+
+With a clear vision and a bold approach, REMAX India remains committed to transforming customer experiences and leading the evolution of real estate in India.`,
         logo: remaxLogo,
         images: [
-            "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
+            remaxDisplay.src, // real estate agent
             "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
             "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // handshake
             "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // city skyline
@@ -119,7 +138,7 @@ Backed by expertise and a commitment to excellence, AKCEL Investments is poised 
         ],
     },
     {
-        title: "AKCEL GP Academy (Coming Soon)",
+        title: "AKCEL GP Academy",
         slug: "akcel-gp-academy",
         description: `AKCEL GP Academy is a premier training academy dedicated to developing top-tier talent in two of the UAE’s most promising sectors—IT services and real estate sales.
 

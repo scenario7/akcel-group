@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Montserrat } from "next/font/google";
 import RotatingText from "@/animations/RotatingText/RotatingText";
 import { motion } from "framer-motion";
+import gp from '@/images/GP/2.jpg'
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -11,7 +12,7 @@ const montserrat = Montserrat({
 
 const HeroSection = () => {
   const images = [
-    "https://images.unsplash.com/photo-1573882077407-90354b357c52?q=80&w=2057&auto=format&fit=crop",
+    gp.src,
     "https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2070&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1524813686514-a57563d77965?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",

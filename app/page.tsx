@@ -1,10 +1,10 @@
 import NavBar from "@/components/navbar";
 import HeroSection from "@/components/herosection";
-import AboutSection from "@/components/aboutsection";
 import CustomFooter from "@/components/customfooter";
 import Businesses from "@/components/businesses";
 import Leadership from "@/components/leadership";
-import Locations from "@/components/locations";
+import MediaSection from "@/components/media";
+import Podcasts from "@/components/podcasts";
 
 export default function Home() {
   return (
@@ -16,10 +16,11 @@ export default function Home() {
       </div>
 
       {/* The rest of the page */}
-      <AboutSection />
+      {/* <AboutSection /> */}
       <Leadership/>
       <Businesses />
-      <Locations/>
+      <MediaSection/>
+      <Podcasts/>
       <CustomFooter />
     </div>
   );

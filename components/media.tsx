@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Montserrat } from "next/font/google";
 import { Open_Sans } from "next/font/google";
-import gp6 from '@/images/GP/6.jpg'
-import gp7 from '@/images/GP/7.jpg'
-import gp8 from '@/images/GP/8.jpg'
+import gp6 from "@/images/GP/6.jpg";
+import gp7 from "@/images/GP/7.jpg";
+import gp8 from "@/images/GP/8.jpg";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -18,22 +18,6 @@ const montserrat = Montserrat({
 });
 
 const MediaSection = () => {
-  const sectionRefs = useRef<Array<HTMLDivElement | null>>([]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      sectionRefs.current.forEach((ref) => {
-        if (!ref) return;
-        const speed = 0.4;
-        const offset = window.scrollY - ref.offsetTop;
-        ref.style.backgroundPosition = `center ${offset * speed}px`;
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const mediaItems = [
     {
       name: "Press Releases",
@@ -53,21 +37,26 @@ const MediaSection = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-[#ffffff]">
-      <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5"></div>
-
-      <h1 className={`${montserrat.className} text-center text-3xl font-semibold text-black mb-10`}>
-        Media & Insights
-      </h1>
+    <div className="flex flex-col items-start bg-[#ffffff]">
+      <div className="flex items-center gap-10 py-5 px-20">
+        <div className="flex flex-col items-center gap-5">
+          <h1
+            className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
+          >
+            Media
+          </h1>
+        </div>
+        <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20"></div>
+        <p className={`${openSans.className} text-black`}>
+          Discover our journey through press, stories, and milestone moments.
+        </p>
+      </div>
 
       <div className="flex w-screen flex-col md:flex-row">
         {mediaItems.map((item, index) => (
           <div
             key={index}
-            ref={(el) => {
-              sectionRefs.current[index] = el;
-            }}
-            className="relative flex flex-col items-start w-full h-96 px-10 py-10 justify-end transition-all duration-1000 ease-out bg-fixed bg-center bg-cover"
+            className="relative flex flex-col items-start w-full h-96 px-10 py-10 justify-end transition-all duration-1000 ease-out bg-center bg-cover"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             <div className="absolute inset-0 bg-black/30 z-10 opacity-70" />

@@ -1,41 +1,53 @@
-import React from 'react'
-import { Montserrat } from 'next/font/google'
+'use client'
+import React from "react";
+import { Montserrat } from "next/font/google";
+import Waves from "@/animations/Waves/Waves";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-
 interface HeroTemplateProps {
-  title: string
-  subtitle?: string
-  image: string
+  title: string;
+  subtitle?: string;
+  image: string;
 }
 
 const HeroTemplate: React.FC<HeroTemplateProps> = ({
   title,
   subtitle,
-  image,
 }) => {
   return (
     <div
-      className="relative flex flex-col items-center justify-center w-full h-[300px] bg-white"
+      className="relative flex flex-col items-center justify-center w-full h-[300px]"
       style={{
-        backgroundImage: `url('${image}')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent backdrop-blur-sm"></div>
-      <h1 className={`${montserrat.className} font-bold text-white text-6xl uppercase relative z-10`}>
-        {title}
+      <Waves
+      lineColor="#e33439"
+      backgroundColor="rgba(227, 52, 57, 0.2)"
+      waveSpeedX={0.02}
+      waveSpeedY={0.01}
+      waveAmpX={40}
+      waveAmpY={20}
+      friction={0.9}
+      tension={0.01}
+      maxCursorMove={120}
+      xGap={12}
+      yGap={36}
+      className="absolute inset-0 bg-gradient-to-b from-[#e33439] to-transparent"
+      />
+      <h1
+      className={`${montserrat.className} font-bold text-white text-6xl uppercase relative z-10`}
+      >
+      {title}
       </h1>
       {subtitle && (
-        <p className="text-white text-xl mt-2 relative z-10">{subtitle}</p>
+      <p className="text-white text-xl mt-2 relative z-10">{subtitle}</p>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default HeroTemplate
+export default HeroTemplate;

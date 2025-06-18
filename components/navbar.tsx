@@ -101,15 +101,55 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink href="/sustainability">
-                Sustainability
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
               <NavigationMenuLink href="/contact">
                 Contact Us
               </NavigationMenuLink>
             </NavigationMenuItem>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="bg-white rounded-full p-2 hover:bg-gray-200 transition"
+            >
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" fill="#fff" />
+                <path
+                  d="M8.339 17H6.167V10.667h2.172V17zM7.253 9.8a1.253 1.253 0 1 1 0-2.506 1.253 1.253 0 0 1 0 2.506zM17 17h-2.167v-3.2c0-.763-.014-1.744-1.063-1.744-1.064 0-1.227.832-1.227 1.69V17H10.38V10.667h2.08v.863h.03c.29-.55 1-1.13 2.06-1.13 2.204 0 2.61 1.45 2.61 3.34V17z"
+                  fill="#000"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="bg-white rounded-full p-2 hover:bg-gray-200 transition"
+            >
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" fill="#fff" />
+                <g>
+                  <rect
+                    x="7"
+                    y="7"
+                    width="10"
+                    height="10"
+                    rx="3"
+                    stroke="#000"
+                    strokeWidth="1.5"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="2.5"
+                    stroke="#000"
+                    strokeWidth="1.5"
+                  />
+                  <circle cx="15.5" cy="8.5" r="0.75" fill="#000" />
+                </g>
+              </svg>
+            </a>
           </NavigationMenuList>
         </NavigationMenu>
       </div>

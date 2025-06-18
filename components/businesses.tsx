@@ -14,27 +14,29 @@ const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-
-
 const Businesses = () => {
   return (
-    <div className="flex flex-col items-center bg-white relative overflow-hidden py-10">
-      <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5"></div>
-      <h1
-        className={`${montserrat.className} text-center text-3xl font-semibold text-black mb-10`}
-      >
-        Brands
-      </h1>
+    <div className="flex flex-col items-start bg-white relative overflow-hidden py-10">
+      {/* Header Section */}
+      <div className="flex items-center gap-10 py-5 px-6 sm:px-10 md:px-20">
+        <div className="flex flex-col items-center gap-5">
+          <h1 className={`${montserrat.className} text-3xl font-semibold text-black text-center`}>
+            Our Brands
+          </h1>
+        </div>
+        <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20" />
+        <p className={`${openSans.className} text-black`}>
+          A collective of visionary brands driving impact, innovation, and growth across industries.
+        </p>
+      </div>
 
-      <div className="w-full overflow-hidden">
-        <div
-          className="flex whitespace-nowrap animate-scroll gap-10 px-10 py-10"
-          style={{ animation: "scroll 30s linear infinite" }}
-        >
+      {/* Grid Section */}
+      <div className="w-full px-6 sm:px-10 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 py-10">
           {akcelCompanies.map((company, index) => (
             <div
               key={index}
-              className="relative h-96 w-72 flex-shrink-0 hover:scale-105 hover:shadow-md transition-all overflow-hidden shadow-xl border border-gray-200 group"
+              className="relative h-96 w-full overflow-hidden shadow-xl border border-gray-200 group transition-all"
               style={{
                 backgroundImage: `url(${company.images[0]})`,
                 backgroundSize: "cover",
@@ -42,32 +44,34 @@ const Businesses = () => {
               }}
             >
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/30 z-10 opacity-70 transition-all group-hover:bg-black/40" />
+              {/* <div className="absolute inset-0 z-10 transition-all bg-black/50" /> */}
+              <div className="absolute inset-0 z-20 transition-all bg-gradient-to-t from-black to-transparent" />
 
               {/* Content */}
-              <div className="absolute flex-col h-full w-full flex items-center justify-center z-20 gap-4 text-white text-center px-4 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent z-10 opacity-" />
-
-                <div className="w-36 bg- rounded-full p-3 hover:scale-110 transition-transform z-20">
+              <div className="absolute flex h-full w-full items-end justify-between z-30 gap-4 text-white text-center px-5 py-5 transition-all duration-300">
+                {/* <div className="w-36 h-36 bg-white p-3 hover:scale-110 transition-transform z-20">
                   <img
                     src={company.logo.src}
                     alt={`${company.title} logo`}
-                    className="h-36 object-contain"
+                    className="h-36 w-36 object-contain"
                   />
-                </div>
-
+                </div> */}
+                <h2 className={`${montserrat.className} text-xl font-semibold text-white`}>
+                  {company.title}
+                </h2>
 
                 <a
                   href={`companies/${company.slug}`}
-                  className={`${openSans.className} z-20 text-black px-4 py-2 bg-white rounded-md font-medium flex items-center gap-2 transition-all ease-in-out duration-300 hover:bg-white hover:text-[#da291c] shadow-lg mt-3 opacity-90`}
+                  className={`${openSans.className} bottom-0 right-0 z-20 text-black w-12 h-12 bg-white font-medium flex items-center justify-center transition-all ease-in-out duration-300 hover:text-white hover:bg-[#da291c] shadow-lg mt-3 opacity-90`}
+                  style={{ aspectRatio: "1 / 1" }}
                 >
-                  Read More
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="18"
                     fill="none"
                     viewBox="0 0 24 24"
+                    className="-rotate-45 h-5 w-5"
                   >
                     <path
                       d="M5 12h14M13 6l6 6-6 6"
@@ -83,17 +87,6 @@ const Businesses = () => {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </div>
   );
 };

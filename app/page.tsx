@@ -4,7 +4,6 @@ import CustomFooter from "@/components/customfooter";
 import Businesses from "@/components/businesses";
 import Leadership from "@/components/leadership";
 import MediaSection from "@/components/media";
-import Podcasts from "@/components/podcasts";
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <Leadership/>
       <Businesses />
       <MediaSection/>
-      <Podcasts/>
       <CustomFooter />
     </div>
   );

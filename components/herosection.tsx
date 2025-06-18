@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Montserrat } from "next/font/google";
 import RotatingText from "@/animations/RotatingText/RotatingText";
 import { motion } from "framer-motion";
-import gp from '@/images/GP/2.jpg'
+import gp from '@/images/GP/6.jpg'
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,10 +31,9 @@ const HeroSection = () => {
   }, [currentImage, images.length]);
 
   return (
-<div className="relative w-full h-full overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden">
       {/* Crossfade Images */}
       <div className="absolute top-0 left-0 w-full h-full -z-10">
-        {/* Previous image fading out */}
         <motion.img
           key={`prev-${prevImage}`}
           src={images[prevImage]}
@@ -43,7 +42,6 @@ const HeroSection = () => {
           transition={{ duration: 1 }}
           className="absolute w-full h-full object-cover"
         />
-        {/* Current image fading in */}
         <motion.img
           key={`current-${currentImage}`}
           src={images[currentImage]}
@@ -55,21 +53,21 @@ const HeroSection = () => {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black opacity-100 -z-5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black/50 opacity-100 -z-5" />
 
-      {/* Rotating Text */}
-      <div className="absolute flex justify-center text-white top-[40%] text-center items-center w-full">
+      {/* Left-aligned Text */}
+      <div className="absolute flex gap-5 top-[40%] left-6 sm:left-12 md:left-20 text-white text-left">
         <motion.h1
           layout
           transition={{ type: "spring", duration: 0.6, damping: 20 }}
-          className={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className} p-3`}
+          className={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className} mb-2`}
         >
           AKCEL
         </motion.h1>
         <motion.div
           layout
           transition={{ type: "spring", duration: 0.6, damping: 20 }}
-          className="bg-[#] p-3 rounded-xl transition-all leading-tight"
+          className="leading-tight"
         >
           <RotatingText
             texts={rotatingWords}
@@ -80,7 +78,7 @@ const HeroSection = () => {
             exit={{ y: "-120%" }}
             staggerDuration={0.05}
             splitLevelClassName="overflow-hidden"
-            rotationInterval={3000} // Match image interval
+            rotationInterval={3000}
           />
         </motion.div>
       </div>

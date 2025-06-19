@@ -43,17 +43,24 @@ const CompanyPage = async ({
       <HeroTemplate image={company.image} title={company.title} subtitle="" />
 
       <div className="flex flex-col items-center bg-white py-10 px-4">
-        <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20"></div>
+  <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-6"></div>
 
-        {company.description.split("\n\n").map((para, index) => (
-          <p
-            key={index}
-            className={`${openSans.className} text-center text-lg mt-10 w-full max-w-6xl text-black`}
-          >
-            {para}
-          </p>
-        ))}
-      </div>
+  {company.subtitle && (
+    <blockquote className={`italic text-2xl text-center max-w-4xl text-[#da291c] mb-10 ${montserrat.className}`}>
+      “{company.subtitle}”
+    </blockquote>
+  )}
+
+  {company.description.split("\n\n").map((para, index) => (
+    <p
+      key={index}
+      className={`${openSans.className} text-center text-lg mt-10 w-full max-w-6xl text-black`}
+    >
+      {para}
+    </p>
+  ))}
+</div>
+
       <div className="bg-white py-12 px-4">
         <h2 className={`text-black text-3xl font-semibold mb-8 text-center ${montserrat.className}`}>
           Brands

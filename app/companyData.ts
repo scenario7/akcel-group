@@ -161,6 +161,7 @@ Backed by expertise and a commitment to excellence, AKCEL Investments is poised 
 export const akcelBusinesses = [
   {
     title: "Technology",
+    subtitle : "",
     slug : 'techonology',
     description: "Driving digital transformation and IT innovation across industries.",
     image:
@@ -171,6 +172,7 @@ export const akcelBusinesses = [
   },
   {
     title: "Education",
+    subtitle : "",
     slug : 'education',
     description: "Empowering talent with industry-focused training and skills.",
     image:
@@ -181,8 +183,9 @@ export const akcelBusinesses = [
   },
   {
     title: "Real Estate",
+    subtitle : "Building Statements. Crafting Statements",
     slug : 'real-estate',
-    description: "Redefining modern living through premium developments and smart realty solutions.",
+    description: "Our real estate vision is grounded in bold thinking and contemporary design. We don’t just develop properties we craft environments that elevate everyday living and redefine urban experiences. From iconic residences to cutting-edge commercial hubs, every project is a reflection of thoughtful design, long-term value, and lifestyle relevance. With a commitment to timeless aesthetics, functional innovation, and uncompromising quality, we create spaces that are as aspirational as they are enduring. Active across key global cities—including London and Dubai—our portfolio reflects a sharp understanding of evolving market needs and a deep belief in building for what’s next.",
     image:
       "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -191,8 +194,9 @@ export const akcelBusinesses = [
   },
   {
     title: "Entertainment",
+    subtitle : "From Soundwaves to Spotlights—We Create What Connects.",
     slug : 'entertainment',
-    description: "Shaping the future of content, media, and community experiences.",
+    description: "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it's a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -201,6 +205,7 @@ export const akcelBusinesses = [
   },
   {
     title: "Mining",
+    subtitle : "",
     slug : 'mining',
     description: "Exploring new frontiers in sustainable and strategic resource ventures.",
     image:
@@ -209,8 +214,9 @@ export const akcelBusinesses = [
   },
   {
     title: "Investment",
+    subtitle : "Backing Ideas That Shape Tomorrow.",
     slug : 'investment',
-    description: "Innovative financial strategies to build wealth and long-term value.",
+    description: "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",
     image:
       "https://images.unsplash.com/photo-1554224155-22dec7ec8818?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -219,8 +225,9 @@ export const akcelBusinesses = [
   },
   {
     title: "Motorsports",
+    subtitle : "Accelerating Excellence",
     slug : 'motorsports',
-    description: "Competing on the global stage while nurturing next-generation racing talent.",
+    description: "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
     image:
       "https://images.unsplash.com/photo-1602407294553-6d4d02b23796?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>

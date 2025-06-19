@@ -67,7 +67,7 @@ const Navbar = () => {
                   {akcelBusinesses.map((company, index) => (
                     <NavigationMenuLink
                       key={index}
-                      href={`businesses/${company.slug}`}
+                      href={`/businesses/${company.slug}`}
                     >
                       {company.title}
                     </NavigationMenuLink>

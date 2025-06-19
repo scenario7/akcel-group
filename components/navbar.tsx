@@ -32,6 +32,27 @@ const Navbar = () => {
           <NavigationMenuList
             className={`space-x-4 ${openSans.className} text-white font-semibold tracking-tight`}
           >
+                        <NavigationMenuItem>
+              <NavigationMenuTrigger
+                className={`${openSans.className} bg-transparent text-white font-semibold tracking-tight`}
+              >
+                Our Businesses
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div
+                  className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white tracking-tight`}
+                >
+                  {akcelBusinesses.map((company, index) => (
+                    <NavigationMenuLink
+                      key={index}
+                      href={`/businesses/${company.slug}`}
+                    >
+                      {company.title}
+                    </NavigationMenuLink>
+                  ))}
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger
                 className={`${openSans.className} bg-transparent text-white font-semibold tracking-tight`}
@@ -51,27 +72,6 @@ const Navbar = () => {
                   <NavigationMenuLink href="/our-vision">
                     Our Vision
                   </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger
-                className={`${openSans.className} bg-transparent text-white font-semibold tracking-tight`}
-              >
-                Our Businesses
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div
-                  className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white tracking-tight`}
-                >
-                  {akcelBusinesses.map((company, index) => (
-                    <NavigationMenuLink
-                      key={index}
-                      href={`/businesses/${company.slug}`}
-                    >
-                      {company.title}
-                    </NavigationMenuLink>
-                  ))}
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>

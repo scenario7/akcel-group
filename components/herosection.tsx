@@ -26,7 +26,7 @@ const HeroSection = () => {
     const interval = setInterval(() => {
       setPrevImage(currentImage);
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [currentImage, images.length]);
 
@@ -56,13 +56,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black/50 opacity-100 -z-5" />
 
       {/* Left-aligned Text */}
-      <div className="absolute flex gap-5 top-[40%] left-6 sm:left-12 md:left-20 text-white text-left">
+      <div className="absolute flex items-center gap-5 top-[40%] left-6 sm:left-12 md:left-20 text-white text-left">
         <motion.h1
           layout
           transition={{ type: "spring", duration: 0.6, damping: 20 }}
           className={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className} mb-2`}
         >
-          AKCEL Group | 
+          AKCEL Group <span className="text-[#da291c]">|</span>
         </motion.h1>
         <motion.div
           layout
@@ -71,14 +71,14 @@ const HeroSection = () => {
         >
           <RotatingText
             texts={rotatingWords}
-            mainClassName={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className}`}
+            mainClassName={`text-5xl sm:text-6xl bg-[#da291c] rounded-lg px-4 py-2 md:text-6xl font-semibold ${montserrat.className}`}
             staggerFrom="last"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "-120%" }}
             staggerDuration={0.05}
             splitLevelClassName="overflow-hidden"
-            rotationInterval={3000}
+            rotationInterval={5000}
           />
         </motion.div>
       </div>

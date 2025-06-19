@@ -17,6 +17,13 @@ import gp8 from "@/images/GP/8.jpg";
 import gp9 from "@/images/GP/9.jpg";
 import gp10 from "@/images/GP/10.jpg";
 import gp11 from "@/images/GP/11.jpg";
+import remax1 from "@/images/remax/1.jpg";
+import remax2 from "@/images/remax/2.jpg";
+import remax3 from "@/images/remax/3.jpg";
+import remax4 from "@/images/remax/4.jpg";
+import remax5 from "@/images/remax/5.jpg";
+import remax6 from "@/images/remax/6.jpg";
+import remax7 from "@/images/remax/7.jpg";
 
 export const akcelCompanies = [
   {
@@ -112,11 +119,13 @@ With a clear vision and a bold approach, REMAX India remains committed to transf
     logo: remaxLogo,
     images: [
       remaxDisplay.src, // real estate agent
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
-      "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // handshake
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // city skyline
-      "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // house keys
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80", // property
+      remax1.src,
+      remax2.src,
+      remax3.src,
+      remax4.src,
+      remax5.src,
+      remax6.src,
+      remax7.src,
     ],
     link: "https://remax.in",
   },
@@ -161,9 +170,10 @@ Backed by expertise and a commitment to excellence, AKCEL Investments is poised 
 export const akcelBusinesses = [
   {
     title: "Technology",
-    subtitle : "",
-    slug : 'techonology',
-    description: "Driving digital transformation and IT innovation across industries.",
+    subtitle: "",
+    slug: "techonology",
+    description:
+      "Driving digital transformation and IT innovation across industries.",
     image:
       "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -172,8 +182,8 @@ export const akcelBusinesses = [
   },
   {
     title: "Education",
-    subtitle : "",
-    slug : 'education',
+    subtitle: "",
+    slug: "education",
     description: "Empowering talent with industry-focused training and skills.",
     image:
       "https://images.unsplash.com/photo-1581093588401-34cb9f7b7b91?auto=format&fit=crop&w=800&q=80",
@@ -183,9 +193,10 @@ export const akcelBusinesses = [
   },
   {
     title: "Real Estate",
-    subtitle : "Building Statements. Crafting Statements",
-    slug : 'real-estate',
-    description: "Our real estate vision is grounded in bold thinking and contemporary design. We don’t just develop properties we craft environments that elevate everyday living and redefine urban experiences. From iconic residences to cutting-edge commercial hubs, every project is a reflection of thoughtful design, long-term value, and lifestyle relevance. With a commitment to timeless aesthetics, functional innovation, and uncompromising quality, we create spaces that are as aspirational as they are enduring. Active across key global cities—including London and Dubai—our portfolio reflects a sharp understanding of evolving market needs and a deep belief in building for what’s next.",
+    subtitle: "Building Statements. Crafting Statements",
+    slug: "real-estate",
+    description:
+      "Our real estate vision is grounded in bold thinking and contemporary design. We don’t just develop properties we craft environments that elevate everyday living and redefine urban experiences. From iconic residences to cutting-edge commercial hubs, every project is a reflection of thoughtful design, long-term value, and lifestyle relevance. With a commitment to timeless aesthetics, functional innovation, and uncompromising quality, we create spaces that are as aspirational as they are enduring. Active across key global cities—including London and Dubai—our portfolio reflects a sharp understanding of evolving market needs and a deep belief in building for what’s next.",
     image:
       "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -194,9 +205,10 @@ export const akcelBusinesses = [
   },
   {
     title: "Entertainment",
-    subtitle : "From Soundwaves to Spotlights—We Create What Connects.",
-    slug : 'entertainment',
-    description: "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it's a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
+    subtitle: "From Soundwaves to Spotlights—We Create What Connects.",
+    slug: "entertainment",
+    description:
+      "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it's a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -205,18 +217,20 @@ export const akcelBusinesses = [
   },
   {
     title: "Mining",
-    subtitle : "",
-    slug : 'mining',
-    description: "Exploring new frontiers in sustainable and strategic resource ventures.",
+    subtitle: "",
+    slug: "mining",
+    description:
+      "Exploring new frontiers in sustainable and strategic resource ventures.",
     image:
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
     companies: [], // Add mining companies later
   },
   {
     title: "Investment",
-    subtitle : "Backing Ideas That Shape Tomorrow.",
-    slug : 'investment',
-    description: "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",
+    subtitle: "Backing Ideas That Shape Tomorrow.",
+    slug: "investment",
+    description:
+      "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",
     image:
       "https://images.unsplash.com/photo-1554224155-22dec7ec8818?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -225,13 +239,12 @@ export const akcelBusinesses = [
   },
   {
     title: "Motorsports",
-    subtitle : "Accelerating Excellence",
-    slug : 'motorsports',
-    description: "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
+    subtitle: "Accelerating Excellence",
+    slug: "motorsports",
+    description:
+      "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
     image:
       "https://images.unsplash.com/photo-1602407294553-6d4d02b23796?auto=format&fit=crop&w=800&q=80",
-    companies: akcelCompanies.filter((c) =>
-      ["akcel-gp"].includes(c.slug)
-    ),
+    companies: akcelCompanies.filter((c) => ["akcel-gp"].includes(c.slug)),
   },
 ];

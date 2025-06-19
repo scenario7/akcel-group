@@ -68,7 +68,7 @@ const MediaSection = () => {
                 href={item.link}
                 className={`${openSans.className} tracking-tight inline-flex items-center gap-1 px-3 py-2 hover:bg-[#da219c] hover:text-white text-black bg-white transition-all mt-5`}
               >
-                Explore
+                Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-4 h-4 ml-1"

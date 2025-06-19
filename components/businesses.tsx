@@ -2,7 +2,7 @@
 import React from "react";
 import { Montserrat } from "next/font/google";
 import { Open_Sans } from "next/font/google";
-import { akcelCompanies } from "@/app/companyData";
+import { akcelBusinesses } from "@/app/companyData";
 
 // Fonts
 const openSans = Open_Sans({
@@ -21,7 +21,7 @@ const Businesses = () => {
       <div className="flex items-center gap-10 py-5 px-6 sm:px-10 md:px-20">
         <div className="flex flex-col items-center gap-5">
           <h1 className={`${montserrat.className} text-3xl font-semibold text-black text-center`}>
-            Our Brands
+            Sectors
           </h1>
         </div>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20" />
@@ -33,12 +33,12 @@ const Businesses = () => {
       {/* Grid Section */}
       <div className="w-full px-6 sm:px-10 md:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 py-10">
-          {akcelCompanies.map((company, index) => (
+          {akcelBusinesses.map((company, index) => (
             <div
               key={index}
               className="relative h-96 w-full overflow-hidden shadow-xl border border-gray-200 group transition-all"
               style={{
-                backgroundImage: `url(${company.images[0]})`,
+                backgroundImage: `url(${company.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -61,7 +61,7 @@ const Businesses = () => {
                 </h2>
 
                 <a
-                  href={`companies/${company.slug}`}
+                  href={`businesses/${company.slug}`}
                   className={`${openSans.className} bottom-0 right-0 z-20 text-black w-12 h-12 bg-white font-medium flex items-center justify-center transition-all ease-in-out duration-300 hover:text-white hover:bg-[#da291c] shadow-lg mt-3 opacity-90`}
                   style={{ aspectRatio: "1 / 1" }}
                 >

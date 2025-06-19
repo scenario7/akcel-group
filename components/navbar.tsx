@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import { akcelCompanies } from "@/app/companyData";
+import { akcelBusinesses } from "@/app/companyData";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -58,16 +58,16 @@ const Navbar = () => {
               <NavigationMenuTrigger
                 className={`${openSans.className} bg-transparent text-white font-semibold tracking-tight`}
               >
-                Our Brands
+                Our Businesses
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div
                   className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white tracking-tight`}
                 >
-                  {akcelCompanies.map((company, index) => (
+                  {akcelBusinesses.map((company, index) => (
                     <NavigationMenuLink
                       key={index}
-                      href={`companies/${company.slug}`}
+                      href={`businesses/${company.slug}`}
                     >
                       {company.title}
                     </NavigationMenuLink>

@@ -18,7 +18,7 @@ const HeroSection = () => {
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
   ];
 
-  const rotatingWords = ["GP", "Entertainment", "Homes", "Realty"];
+  const rotatingWords = ["Motorsports", "Entertainment", "Real Estate", "Education", "Mining", "Investments"];
   const [currentImage, setCurrentImage] = useState(0);
   const [prevImage, setPrevImage] = useState(0);
 
@@ -62,7 +62,7 @@ const HeroSection = () => {
           transition={{ type: "spring", duration: 0.6, damping: 20 }}
           className={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className} mb-2`}
         >
-          AKCEL
+          AKCEL Group | 
         </motion.h1>
         <motion.div
           layout

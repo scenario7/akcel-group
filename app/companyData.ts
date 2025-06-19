@@ -157,3 +157,74 @@ Backed by expertise and a commitment to excellence, AKCEL Investments is poised 
     ],
   },
 ];
+
+export const akcelBusinesses = [
+  {
+    title: "Technology",
+    slug : 'techonology',
+    description: "Driving digital transformation and IT innovation across industries.",
+    image:
+      "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80",
+    companies: akcelCompanies.filter((c) =>
+      ["jetking-technologies"].includes(c.slug)
+    ),
+  },
+  {
+    title: "Education",
+    slug : 'education',
+    description: "Empowering talent with industry-focused training and skills.",
+    image:
+      "https://images.unsplash.com/photo-1581093588401-34cb9f7b7b91?auto=format&fit=crop&w=800&q=80",
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-gp-academy"].includes(c.slug)
+    ),
+  },
+  {
+    title: "Real Estate",
+    slug : 'real-estate',
+    description: "Redefining modern living through premium developments and smart realty solutions.",
+    image:
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-realty", "remax-india"].includes(c.slug)
+    ),
+  },
+  {
+    title: "Entertainment",
+    slug : 'entertainment',
+    description: "Shaping the future of content, media, and community experiences.",
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-entertainment-media"].includes(c.slug)
+    ),
+  },
+  {
+    title: "Mining",
+    slug : 'mining',
+    description: "Exploring new frontiers in sustainable and strategic resource ventures.",
+    image:
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    companies: [], // Add mining companies later
+  },
+  {
+    title: "Investment",
+    slug : 'investment',
+    description: "Innovative financial strategies to build wealth and long-term value.",
+    image:
+      "https://images.unsplash.com/photo-1554224155-22dec7ec8818?auto=format&fit=crop&w=800&q=80",
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-investments"].includes(c.slug)
+    ),
+  },
+  {
+    title: "Motorsports",
+    slug : 'motorsports',
+    description: "Competing on the global stage while nurturing next-generation racing talent.",
+    image:
+      "https://images.unsplash.com/photo-1602407294553-6d4d02b23796?auto=format&fit=crop&w=800&q=80",
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-gp"].includes(c.slug)
+    ),
+  },
+];

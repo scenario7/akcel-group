@@ -185,7 +185,7 @@ export const akcelBusinesses = [
     description:
       "Driving digital transformation and IT innovation across industries.",
     image:
-      "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     companies: akcelCompanies.filter((c) =>
       ["jetking-technologies"].includes(c.slug)
     ),
@@ -196,7 +196,7 @@ export const akcelBusinesses = [
     slug: "education",
     description: "Empowering talent with industry-focused training and skills.",
     image:
-      "https://images.unsplash.com/photo-1581093588401-34cb9f7b7b91?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=3032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     companies: akcelCompanies.filter((c) =>
       ["akcel-gp-academy"].includes(c.slug)
     ),
@@ -232,7 +232,7 @@ export const akcelBusinesses = [
     description:
       "Exploring new frontiers in sustainable and strategic resource ventures.",
     image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     companies: [], // Add mining companies later
   },
   {
@@ -242,7 +242,7 @@ export const akcelBusinesses = [
     description:
       "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",
     image:
-      "https://images.unsplash.com/photo-1554224155-22dec7ec8818?auto=format&fit=crop&w=800&q=80",
+      "https://plus.unsplash.com/premium_photo-1661443781814-333019eaad2d?q=80&w=3051&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     companies: akcelCompanies.filter((c) =>
       ["akcel-investments"].includes(c.slug)
     ),

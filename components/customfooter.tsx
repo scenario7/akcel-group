@@ -10,7 +10,13 @@ const openSans = Open_Sans({
 const CustomFooter = () => {
   return (
     <div className="flex items-center justify-between bg-black w-screen px-10 py-10">
-      <div className="flex flex-col items-start w-1/4">
+      <img src={whiteLogo.src} alt="" className="h-36" />
+      <div className="flex flex-col items-start">
+        <a href="/">Home</a>
+        <a href="/">Leadership</a>
+        <a href="/">Our Story</a>
+      </div>
+      <div className="flex flex-col items-start">
         <div
           className={`flex flex-col items-start text-left ${openSans.className} gap-2 text-white font-semibold tracking-tight`}
         >
@@ -81,7 +87,6 @@ const CustomFooter = () => {
           </div>
         </div>
       </div>
-      <img src={whiteLogo.src} alt="" className="h-36" />
       <div className="flex flex-col justify-between h-full gap-10 items-end w-1/4">
         <div
           className={`flex flex-col gap-2 items-end ${openSans.className} font-semibold tracking-tight text-xs`}

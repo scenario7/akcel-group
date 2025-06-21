@@ -18,7 +18,7 @@ const marquee = ["Press Releases", "Events", "In the News", "Podcasts"];
 
 const NewMediaSection = () => {
   return (
-    <div className="flex flex-col w-screen pt-10 bg-white">
+    <div className="flex flex-col w-full pt-10 bg-white">
       <Marquee
         className="group absolute z-20 w-screen bg-[#000000] transition-all ease-in-out"
         gradient

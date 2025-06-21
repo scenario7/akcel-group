@@ -18,7 +18,7 @@ const Leadership = () => {
   const sectionRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   return (
-    <div className="flex flex-col items-start bg-[#ffffff]">
+    <div className="flex flex-col items-start bg-[#ffffff] w-full">
       <div className="flex items-center gap-10 py-5 px-20">
         <div className="flex flex-col items-center gap-5">
           <h1
@@ -33,7 +33,7 @@ const Leadership = () => {
         </p>
       </div>
 
-      <div className="flex w-screen flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row">
         {[
           {
             name: "Amit Kaushal",

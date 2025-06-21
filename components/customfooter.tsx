@@ -9,7 +9,7 @@ const openSans = Open_Sans({
 
 const CustomFooter = () => {
   return (
-    <div className="flex items-center justify-between bg-black w-screen px-10 py-10">
+    <div className="flex items-center justify-between bg-black w-full px-10 py-10">
       <div className="flex flex-col items-center justify-center">
         <img src={whiteLogo.src} alt="" className="h-24" />
         <div className="flex items-center gap-4">

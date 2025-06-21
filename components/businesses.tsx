@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 
 const Businesses = () => {
   return (
-    <div className="flex flex-col items-start bg-white relative overflow-hidden py-10">
+    <div className="flex flex-col items-start bg-white relative overflow-hidden">
       {/* Header Section */}
       <div className="flex items-center gap-10 py-5 px-6 sm:px-10 md:px-20">
         <div className="flex flex-col items-center gap-5">
@@ -32,11 +32,11 @@ const Businesses = () => {
 
       {/* Grid Section */}
       <div className="w-full px-6 sm:px-10 md:px-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {akcelBusinesses.map((company, index) => (
             <div
               key={index}
-              className="relative h-96 w-full overflow-hidden shadow-xl border border-gray-200 group transition-all"
+              className="relative h-96 w-full overflow-hidden shadow-xl group transition-all"
               style={{
                 backgroundImage: `url(${company.image})`,
                 backgroundSize: "cover",
@@ -56,7 +56,7 @@ const Businesses = () => {
                     className="h-36 w-36 object-contain"
                   />
                 </div> */}
-                <h2 className={`${montserrat.className} text-xl font-semibold text-white`}>
+                <h2 className={`${montserrat.className} text-xl font-semibold uppercase text-white`}>
                   {company.title}
                 </h2>
 

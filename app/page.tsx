@@ -3,7 +3,7 @@ import HeroSection from "@/components/herosection";
 import CustomFooter from "@/components/customfooter";
 import Businesses from "@/components/businesses";
 import Leadership from "@/components/leadership";
-import MediaSection from "@/components/media";
+import NewMediaSection from "@/components/mediaNew";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       {/* <AboutSection /> */}
       <Leadership/>
       <Businesses />
-      <MediaSection/>
+      <NewMediaSection/>
       <CustomFooter />
     </div>
   );

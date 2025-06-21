@@ -169,6 +169,16 @@ Backed by expertise and a commitment to excellence, AKCEL Investments is poised 
 
 export const akcelBusinesses = [
   {
+    title: "Motorsports",
+    subtitle: "Accelerating Excellence",
+    slug: "motorsports",
+    description:
+      "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
+    image:
+      gp11.src,
+    companies: akcelCompanies.filter((c) => ["akcel-gp"].includes(c.slug)),
+  },
+  {
     title: "Technology",
     subtitle: "",
     slug: "techonology",
@@ -236,15 +246,5 @@ export const akcelBusinesses = [
     companies: akcelCompanies.filter((c) =>
       ["akcel-investments"].includes(c.slug)
     ),
-  },
-  {
-    title: "Motorsports",
-    subtitle: "Accelerating Excellence",
-    slug: "motorsports",
-    description:
-      "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
-    image:
-      "https://images.unsplash.com/photo-1602407294553-6d4d02b23796?auto=format&fit=crop&w=800&q=80",
-    companies: akcelCompanies.filter((c) => ["akcel-gp"].includes(c.slug)),
   },
 ];

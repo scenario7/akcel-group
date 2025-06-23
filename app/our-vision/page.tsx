@@ -13,58 +13,46 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
-
 const letters = [
   {
     letter: "A",
     word: "Aspiration",
     description:
       "Aspiration drives us to set ambitious goals and reach new heights.",
+    image:
+      "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1600&q=100&auto=format&fit=crop&dpr=2",
   },
   {
     letter: "K",
     word: "Knowledge",
     description:
       "Knowledge empowers us to innovate and make informed decisions.",
+    image:
+      "https://images.unsplash.com/photo-1492366254240-43affaefc3e3?w=1600&q=100&auto=format&fit=crop&dpr=2",
   },
   {
     letter: "C",
     word: "Consistency",
     description:
       "Clarity and Consistency ensure we stay focused and reliable in our actions.",
+    image:
+      "https://images.unsplash.com/photo-1469026140142-cb239ea68152?w=1600&q=100&auto=format&fit=crop&dpr=2",
   },
   {
     letter: "E",
     word: "Excellence",
     description:
       "Excellence is our commitment to delivering the highest standards in everything we do.",
+    image:
+      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=100&auto=format&fit=crop&dpr=2",
   },
   {
     letter: "L",
     word: "Legacy",
     description:
       "Legacy inspires us to create lasting impact for future generations.",
-  },
-];
-
-const visionData = [
-  {
-    title: "Mission",
-    description:
-      "Innovation and performance across sectors to transform life. We enhance how people live, work, feel and enjoy.",
-    color: "#da291c",
-  },
-  {
-    title: "Vision",
-    description:
-      "To lead in delivering high-impact solutions and experiences across technology, lifestyle, sports and entertainment.",
-    color: "#000000",
-  },
-  {
-    title: "Values",
-    description:
-      "AKCEL Group is built around the concept of transforming aspiration into legacy. That idea is embedded in our name itself:",
-    color: "#da291c",
+    image:
+      "https://images.unsplash.com/photo-1469026140142-cb239ea68152?w=1600&q=100&auto=format&fit=crop&dpr=2",
   },
 ];
 
@@ -77,60 +65,42 @@ const Page = () => {
         title="Our Vision"
         subtitle=""
       />
-      <div className="flex gap-10 flex-col items-center bg-[#ffffff]">
-        <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5"></div>
-        <h1
-          className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
-        >
-          History and Milestones
-        </h1>
-        <div className="flex justify-between pt-10 px-10">
-          {visionData.map((item, index) => (
-            <div
-              style={{ backgroundColor: item.color }}
-              className="p-10 text-center"
-              key={index}
-            >
-              <h2
-                className={`${montserrat.className} text-2xl font-semibold text-white`}
-              >
-                {item.title}
-              </h2>
-              <p
-                className={`${openSans.className} tracking-tight mt-4 text-white`}
-              >
-                {item.description}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5"></div>
+      <div className="bg-white flex flex-col items-center gap-5 py-5 pb-20">
+                <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20"></div>
         <h1
           className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
         >
           What AKCEL stands for
         </h1>
-        <div className="grid grid-cols-5 gap-8 w-full p-20">
-          {letters.map((letter, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center group transition-transform duration-300 hover:scale-105"
-            >
-              <div className="flex items-center justify-center w-20 h-20 rounded-full border-4 border-[#da291c] bg-white shadow-lg mb-4 transition-colors duration-300 group-hover:bg-[#da291c] group-hover:text-white">
-                <h3
-                  className={`${montserrat.className} text-black text-3xl font-black transition-colors duration-300 group-hover:text-white`}
-                >
-                  {letter.letter}
-                </h3>
-              </div>
-              <h4
-                className={`${montserrat.className} text-lg font-semibold text-[#da291c] mb-2 transition-colors duration-300 group-hover:text-black`}
-              >
-                {letter.word}
-              </h4>
+      </div>
+      <div className="">
+        {letters.map((letter, index) => (
+          <div
+            style={{
+              backgroundImage: `url(${letter.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "bottom",
+            }}
+            key={index}
+            className="relative h-96"
+          >
+                        <div className="absolute inset-0 bg-black/70 z-10 opacity-70" />
+
+            <div className="absolute z-20 flex gap-5 flex-col px-10 py-10 justify-center h-full">
+                <h2 className={`${montserrat.className} text-8xl font-bold uppercase`}>
+                {letter.word.split(" ").map((w, i) => (
+                  <span key={i}>
+                  <span className="text-[#da291c]">{w.charAt(0)}</span>
+                  {w.slice(1)}{" "}
+                  </span>
+                ))}
+                </h2>
+              <p className={`${openSans.className} font-semibold pl-2`}>
+                {letter.description}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
       <CustomFooter />
     </div>

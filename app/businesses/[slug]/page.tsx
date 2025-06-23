@@ -63,18 +63,18 @@ const CompanyPage = async ({
         ))}
       </div>
 
-      <div className="bg-white py-12 px-4">
+      <div className="bg-white py-12 ">
         <h2
           className={`text-black text-3xl font-semibold mb-8 text-center ${montserrat.className}`}
         >
           Brands
         </h2>
-        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 mx-auto bg-black p-10">
           {company.companies.map((c, index) => (
             <a
               key={index}
               href={`/companies/${c.slug}`}
-              className="bg-white rounded-2xl hover:scale-105 transition-transform w-64 flex flex-col items-center p-6"
+              className="bg-white hover:scale-105 transition-transform w-64 flex flex-col items-center p-6"
             >
               <Image
                 src={c.logo}
@@ -83,11 +83,6 @@ const CompanyPage = async ({
                 height={100}
                 className="object-contain h-24 w-auto mb-4"
               />
-              <h3
-                className={`text-xl font-semibold text-center text-black mb-4 ${montserrat.className}`}
-              >
-                {c.title}
-              </h3>
               <a
                 href={`/companies/${c.slug}`}
                 className="mt-auto bg-[#da291c] text-white text-sm font-semibold px-4 py-2 transition hover:bg-[#b51f16]"

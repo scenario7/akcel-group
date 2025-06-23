@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { Montserrat } from "next/font/google";
 import { Open_Sans } from "next/font/google";
+import amit from '@/images/amit.jpg'
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -22,14 +23,16 @@ const Leadership = () => {
       <div className="flex items-center gap-10 py-5 px-20">
         <div className="flex flex-col items-center gap-5">
           <h1
-            className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
+            className={`${montserrat.className} text-center text-3xl font-semibold text-black text-left`}
           >
-            Legacy & Leadership
+            Leadership in Motion
           </h1>
         </div>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20"></div>
         <p className={`${openSans.className} text-black`}>
-          Guided by visionaries, built on legacy — shaping tomorrow with purpose and integrity.
+          Progress isn’t passive -it’s powered by action, bold thinking, and
+          decisive leadership. We lead with agility, foresight, and a commitment
+          to shaping the future.
         </p>
       </div>
 
@@ -37,16 +40,16 @@ const Leadership = () => {
         {[
           {
             name: "Amit Kaushal",
-            title: "Chairman AKCEL Group",
-            img: "https://images.unsplash.com/photo-1484589065579-248aad0d8b13?q=80&w=1959&auto=format&fit=crop",
-            link : '/leadership'
+            title: "Chairman, AKCEL Group",
+            img: amit.src,
+            link: "/leadership",
           },
           {
             name: "Establishing a Foundation of Success",
             title:
               "At AKCEL Group, we believe in building enduring legacies through innovation, integrity, and impact. Our journey is rooted in a deep commitment to excellence across diverse industries—from real estate and entertainment to media and lifestyle. We are more than a business group; we are a vision-driven collective shaping the future with purpose and precision.",
-            img: "https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=2079&auto=format&fit=crop",
-            link : '/our-story'
+            img: "https://images.unsplash.com/photo-1492366254240-43affaefc3e3?q=80&w=650&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            link: "/our-story",
           },
         ].map((item, index) => (
           <div
@@ -57,7 +60,7 @@ const Leadership = () => {
             className="relative flex flex-col items-start w-full h-96 px-10 py-10 justify-end transition-all duration-1000 ease-out bg-center bg-cover"
             style={{ backgroundImage: `url(${item.img})` }}
           >
-            <div className="absolute inset-0 bg-black/30 z-10 opacity-70" />
+            <div className="absolute inset-0 bg-black/70 z-10 opacity-70" />
             <div className="z-20">
               <h1
                 className={`${montserrat.className} text-xl font-semibold text-white`}

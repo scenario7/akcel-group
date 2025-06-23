@@ -46,7 +46,7 @@ const NewMediaSection = () => {
           <h1
             className={`${montserrat.className} text-6xl font-bold`}
           >
-            MEDI<span className="text-[#da291c]">A</span>
+            MEDIA
           </h1>
           <p className={`${openSans.className} text-white font-semibold`}>
             Discover our journey through press, stories, and milestone moments.
@@ -73,25 +73,6 @@ const NewMediaSection = () => {
               </a>
         </div>
       </div>
-      <Marquee
-        className="group absolute z-20 w-screen bg-[#000000] transition-all ease-in-out"
-        gradient
-        speed={50}
-        gradientColor="black"
-        direction="right"
-      >
-        {Array(5)
-          .fill(marquee)
-          .flat()
-          .map((element, index) => (
-            <h1
-              key={index}
-              className={`${openSans.className} italic font-bold py-2  text-white text-lg uppercase`}
-            >
-              {element} &nbsp;•&nbsp;
-            </h1>
-          ))}
-      </Marquee>
     </div>
   );
 };

@@ -4,9 +4,8 @@ import { akcelCompanies } from "@/app/companyData";
 import NavBar from "@/components/navbar";
 import HeroTemplate from "@/components/herotemplate";
 import CustomFooter from "@/components/customfooter";
-import Image from "next/image";
 import { Open_Sans } from "next/font/google";
-import Carousel from "@/components/carousel";
+import Marquee from "react-fast-marquee";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -39,17 +38,21 @@ const CompanyPage = async ({ params }: { params: Promise<{ slug: string }> }) =>
       />
 
       <div className="flex flex-col items-center bg-white py-10 px-4">
-        <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20"></div>
-
+        <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-10"></div>
+{/* 
         <Image
           src={company.logo}
           alt={`${company.title} Logo`}
           className="w-32 h-auto"
           width={160}
           height={64}
-        />
+        /> */}
 
-        <Carousel images={company.images} title={company.title} />
+        <Marquee className="" gradient>
+          {company.images.map((photo, index) => (
+            <img src={photo} className="h-52 mx-10" key={index}></img>
+          ))}
+        </Marquee>
 
         {company.description.split("\n\n").map((para, index) => (
           <p

@@ -18,7 +18,7 @@ const HeroSection = () => {
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
   ];
 
-  const rotatingWords = ["Motorsports", "Entertainment", "Real Estate", "Education", "Mining", "Investments"];
+  const rotatingWords = ["Motorsports", "Entertainment", "Real Estate", "Education", "Mining", "Investment"];
   const [currentImage, setCurrentImage] = useState(0);
   const [prevImage, setPrevImage] = useState(0);
 

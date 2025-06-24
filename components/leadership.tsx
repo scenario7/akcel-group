@@ -29,7 +29,7 @@ const Leadership = () => {
           </h1>
         </div>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20"></div>
-        <p className={`${openSans.className} text-black`}>
+        <p className={`${openSans.className} text-lg text-black`}>
           Progress isn’t passive -it’s powered by action, bold thinking, and
           decisive leadership. We lead with agility, foresight, and a commitment
           to shaping the future.

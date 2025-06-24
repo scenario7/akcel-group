@@ -23,19 +23,21 @@ const Businesses = () => {
           <h1
             className={`${montserrat.className} text-3xl font-semibold text-black text-left`}
           >
-            Our Businesses
+            Businesses
           </h1>
         </div>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20" />
-        <p className={`${openSans.className} text-black text-left`}>
-          At AKCEL Group, we create enduring value through innovation, integrity, and strategic clarity.
-Operating across diverse industries, we are a vision-led collective shaping the future with purpose and precision.
+        <p className={`${openSans.className} text-black text-lg text-left`}>
+          At AKCEL Group, we create enduring value through innovation,
+          integrity, and strategic clarity. Operating across diverse industries,
+          we are a vision-led collective shaping the future with purpose and
+          precision.
         </p>
       </div>
 
       {/* Grid Section */}
-      <div className="w-full px-6 sm:px-10 md:px-20">
-        <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="w-full px-6 sm:px-10 md:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {akcelBusinesses.map((company, index) => (
             <div
               key={index}
@@ -54,12 +56,14 @@ Operating across diverse industries, we are a vision-led collective shaping the 
               {/* Content */}
               <div className="absolute flex flex-col justify-center h-full w-full z-30 p-5 text-white transition-all duration-300">
                 <h2
-                  className={`${montserrat.className} text-xl font-semibold uppercase mb-4`}
+                  className={`${montserrat.className} text-3xl font-semibold uppercase mb-4`}
                 >
                   {company.title}
                 </h2>
-                <p className={`${openSans.className} hidden group-hover:block transition-all mb-4`}>
-                    {company.description.split(" ").slice(0, 20).join(" ")}...
+                <p
+                  className={`${openSans.className} hidden group-hover:block transition-all mb-4`}
+                >
+                  {company.description.split(" ").slice(0, 20).join(" ")}...
                 </p>
 
                 {/* Read More Button */}

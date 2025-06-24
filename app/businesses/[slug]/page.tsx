@@ -67,57 +67,61 @@ const CompanyPage = async ({
         >
           Brands
         </h2>
-        <div className="flex flex-col gap-20 mx-auto p-10">
-          {company.companies.map((c, index) => (
-            <React.Fragment key={index}>
-              <div className="flex gap-5 items-center">
-                <div className="flex flex-col">
-                  <img
-                    src={c.logo.src}
-                    alt={c.title}
-                    className="object-contain mb-4 w-96 h-48"
-                  />
-                  <a
-                    href={c.slug}
-                    className={`${openSans.className} tracking-tight inline-flex items-center gap-1 px-3 py-2 bg-[#da291c] text-white text-sm transition-all mt-5`}
-                  >
-                    Visit Website
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4 ml-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <div className="flex flex-col items-start gap-10 pl-10">
-                  <Marquee gradient speed={30}>
-                    {c.images.map((im, idx) => (
-                      <img
-                        src={im}
-                        alt=""
-                        key={idx}
-                        className="w-48 h-36 object-cover mx-5"
-                      />
-                    ))}
-                  </Marquee>
-                  <p
-                    className={`${openSans.className} tracking-tight text-black text-center`}
-                  >
-                    {c.description}
-                  </p>
-                </div>
-              </div>
-            </React.Fragment>
-          ))}
+        <div className="flex flex-col mx-auto">
+          {company.companies.map((c, index) => {
+            const bgColor = index % 2 === 0 ? "#da291c" : "#000000";
+            const textColor = index % 2 === 0 ? "text-white" : "text-white";
+            return (
+              <React.Fragment key={index}>
+          <div className={`flex gap-5 items-center bg-[${bgColor}] p-8`}>
+            <div className="flex flex-col">
+              <img
+                src={c.logo.src}
+                alt={c.title}
+                className="object-contain mb-4 w-96 h-48 bg-white p-10"
+              />
+              <a
+                href={c.slug}
+                className={`${openSans.className} tracking-tight inline-flex items-center justify-center gap-1 px-3 py-2 bg-white text-[#da291c] text-sm transition-all mt-5 font-semibold`}
+              >
+                Visit Website
+                <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4 ml-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+                >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+                </svg>
+              </a>
+            </div>
+            <div className="flex flex-col items-start gap-10 pl-10 flex-1">
+              <Marquee gradient gradientColor={bgColor} speed={30}>
+                {c.images.map((im, idx) => (
+            <img
+              src={im}
+              alt=""
+              key={idx}
+              className="w-48 h-36 object-cover mx-5"
+            />
+                ))}
+              </Marquee>
+              <p
+                className={`${openSans.className} tracking-tight ${textColor} text-left`}
+              >
+                {c.description}
+              </p>
+            </div>
+          </div>
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
 

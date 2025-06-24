@@ -5,6 +5,7 @@ import akcelRealtyLogo from "@/images/realty.png";
 import remaxLogo from "@/images/remax.png";
 import akcelInvestmentsLogo from "@/images/investments.png";
 import akcelAcademyLogo from "@/images/academy.png";
+import mining from '@/images/mining.jpg'
 import remaxDisplay from "@/images/remaxDisplay.png";
 import gp1 from "@/images/GP/1.jpg";
 import gp2 from "@/images/GP/2.jpg";
@@ -185,7 +186,7 @@ export const akcelBusinesses = [
     description:
       "Driving digital transformation and IT innovation across industries.",
     image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1673825496543-b9609b997baf?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     companies: akcelCompanies.filter((c) =>
       ["jetking-technologies"].includes(c.slug)
     ),
@@ -232,7 +233,7 @@ export const akcelBusinesses = [
     description:
       "Exploring new frontiers in sustainable and strategic resource ventures.",
     image:
-      "https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      mining.src,
     companies: [], // Add mining companies later
   },
   {

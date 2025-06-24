@@ -49,7 +49,7 @@ const NewMediaSection = () => {
             MEDIA
           </h1>
           <p className={`${openSans.className} text-white font-semibold`}>
-            Discover our journey through press, stories, and milestone moments.
+            From newsroom features to major moments — see how we’re shaping conversations.
           </p>
                         <a
                 href='/media'

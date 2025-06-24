@@ -21,15 +21,15 @@ const Businesses = () => {
       <div className="flex items-center gap-10 py-5 px-6 sm:px-10 md:px-20">
         <div className="flex flex-col items-center gap-5">
           <h1
-            className={`${montserrat.className} text-3xl font-semibold text-black text-center`}
+            className={`${montserrat.className} text-3xl font-semibold text-black text-left`}
           >
             Our Businesses
           </h1>
         </div>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20" />
-        <p className={`${openSans.className} text-black`}>
-          A collective of visionary brands driving impact, innovation, and
-          growth across industries.
+        <p className={`${openSans.className} text-black text-left`}>
+          At AKCEL Group, we create enduring value through innovation, integrity, and strategic clarity.
+Operating across diverse industries, we are a vision-led collective shaping the future with purpose and precision.
         </p>
       </div>
 

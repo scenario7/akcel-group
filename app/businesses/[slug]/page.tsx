@@ -4,8 +4,8 @@ import { akcelBusinesses } from "@/app/companyData";
 import NavBar from "@/components/navbar";
 import HeroTemplate from "@/components/herotemplate";
 import CustomFooter from "@/components/customfooter";
-import Image from "next/image";
 import { Montserrat, Open_Sans } from "next/font/google";
+import Marquee from "react-fast-marquee";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -42,12 +42,10 @@ const CompanyPage = async ({
 
       <HeroTemplate image={company.image} title={company.title} subtitle="" />
 
-      <div className="flex flex-col items-center bg-white py-10 px-4">
-        <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-6"></div>
-
+      <div className="flex flex-col items-start bg-white py-10 px-10">
         {company.subtitle && (
           <blockquote
-            className={`italic text-2xl text-center max-w-4xl text-[#da291c] mb-10 ${montserrat.className}`}
+            className={`italic text-2xl text-left max-w-4xl text-[#da291c] mb-10 ${montserrat.className}`}
           >
             “{company.subtitle}”
           </blockquote>
@@ -56,7 +54,7 @@ const CompanyPage = async ({
         {company.description.split("\n\n").map((para, index) => (
           <p
             key={index}
-            className={`${openSans.className} text-center text-lg mt-10 w-full max-w-6xl text-black`}
+            className={`${openSans.className} text-left text-lg mt-10 w-full  text-black`}
           >
             {para}
           </p>
@@ -65,31 +63,60 @@ const CompanyPage = async ({
 
       <div className="bg-white py-12 ">
         <h2
-          className={`text-black text-3xl font-semibold mb-8 text-center ${montserrat.className}`}
+          className={`text-black text-3xl font-semibold mb-8 text-left px-10 ${montserrat.className}`}
         >
           Brands
         </h2>
-        <div className="flex flex-wrap justify-center gap-8 mx-auto bg-black p-10">
+        <div className="flex flex-col gap-20 mx-auto p-10">
           {company.companies.map((c, index) => (
-            <a
-              key={index}
-              href={`/companies/${c.slug}`}
-              className="bg-white hover:scale-105 transition-transform w-64 flex flex-col items-center p-6"
-            >
-              <Image
-                src={c.logo}
-                alt={c.title}
-                width={100}
-                height={100}
-                className="object-contain h-24 w-auto mb-4"
-              />
-              <a
-                href={`/companies/${c.slug}`}
-                className="mt-auto bg-[#da291c] text-white text-sm font-semibold px-4 py-2 transition hover:bg-[#b51f16]"
-              >
-                Read More
-              </a>
-            </a>
+            <React.Fragment key={index}>
+              <div className="flex gap-5 items-center">
+                <div className="flex flex-col">
+                  <img
+                    src={c.logo.src}
+                    alt={c.title}
+                    className="object-contain mb-4 w-96 h-48"
+                  />
+                  <a
+                    href={c.slug}
+                    className={`${openSans.className} tracking-tight inline-flex items-center gap-1 px-3 py-2 bg-[#da291c] text-white text-sm transition-all mt-5`}
+                  >
+                    Visit Website
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div className="flex flex-col items-start gap-10 pl-10">
+                  <Marquee gradient speed={30}>
+                    {c.images.map((im, idx) => (
+                      <img
+                        src={im}
+                        alt=""
+                        key={idx}
+                        className="w-48 h-36 object-cover mx-5"
+                      />
+                    ))}
+                  </Marquee>
+                  <p
+                    className={`${openSans.className} tracking-tight text-black text-center`}
+                  >
+                    {c.description}
+                  </p>
+                </div>
+              </div>
+            </React.Fragment>
           ))}
         </div>
       </div>

@@ -7,6 +7,7 @@ import akcelInvestmentsLogo from "@/images/investments.png";
 import akcelAcademyLogo from "@/images/academy.png";
 import mining from '@/images/mining.jpg'
 import remaxDisplay from "@/images/remaxDisplay.png";
+import investment from '@/images/investmentBanner.jpg'
 import realty from '@/images/realEstate.jpg'
 import gp1 from "@/images/GP/1.jpg";
 import gp2 from "@/images/GP/2.jpg";
@@ -160,7 +161,7 @@ With a strategic vision to empower investors and drive high-value growth, the co
 Backed by expertise and a commitment to excellence, AKCEL Investments is poised to become a key player in the evolving investment landscape.`,
     logo: akcelInvestmentsLogo,
     images: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80", // investments
+      investment.src,
       "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80", // finance
       "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", // stock market
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80", // business meeting
@@ -247,7 +248,7 @@ export const akcelBusinesses = [
     description:
       "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",
     image:
-      "https://plus.unsplash.com/premium_photo-1661443781814-333019eaad2d?q=80&w=3051&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      investment.src,
     companies: akcelCompanies.filter((c) =>
       ["akcel-investments"].includes(c.slug)
     ),

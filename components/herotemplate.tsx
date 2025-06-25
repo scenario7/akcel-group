@@ -44,7 +44,7 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
       {title}
       </h1>
       {subtitle && (
-      <p className="text-white text-xl mt-2 relative z-10">{subtitle}</p>
+      <p className="text-white tracking-tight font-semibold text-lg mt-5 relative z-10" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.5)" }}>{subtitle}</p>
       )}
     </div>
   );

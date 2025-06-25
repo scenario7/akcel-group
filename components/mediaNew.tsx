@@ -43,34 +43,95 @@ const NewMediaSection = () => {
       >
         <div className="absolute inset-0 bg-black/70 z-10 opacity-70" />
         <div className="absolute flex gap-5 items-center flex-col z-20">
-          <h1
-            className={`${montserrat.className} text-6xl font-bold`}
-          >
+          <h1 className={`${montserrat.className} text-6xl font-bold`}>
             MEDIA
           </h1>
           <p className={`${openSans.className} text-white font-semibold`}>
-            From newsroom features to major moments — see how we’re shaping conversations.
+            From newsroom features to major moments — see how we’re shaping
+            conversations.
           </p>
-                        <a
-                href='/media'
-                className={`${openSans.className} tracking-tight inline-flex items-center gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all mt-5`}
-              >
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
+          <div className="flex gap-10">
+          <a
+            href="/media"
+            className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all mt-5`}
+          >
+            Press Releases
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 ml-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <a
+            href="/media"
+            className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all mt-5`}
+          >
+            News
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 ml-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <a
+            href="/media"
+            className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all mt-5`}
+          >
+            Events
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 ml-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <a
+            href="/media"
+            className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all mt-5`}
+          >
+            Podcasts
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 ml-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          </div>
         </div>
       </div>
     </div>

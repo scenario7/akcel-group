@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { Montserrat } from "next/font/google";
 import { Open_Sans } from "next/font/google";
-import amit from '@/images/amit.jpg'
+import amit from "@/images/amit.jpg";
 
 const openSans = Open_Sans({
   subsets: ["latin"],

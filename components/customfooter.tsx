@@ -1,6 +1,7 @@
 import React from "react";
 import whiteLogo from "@/images/whiteLogo.png";
 import { Open_Sans } from "next/font/google";
+import Link from "next/link";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -82,9 +83,9 @@ const CustomFooter = () => {
         <div
           className={`flex flex-col items-start ${openSans.className} font-semibold`}
         >
-          <a href="#">Home</a>
-          <a href="#">Leadership</a>
-          <a href="#">Our Story</a>
+          <Link href="/">Home</Link>
+          <a href="/leadership">Leadership</a>
+          <a href="/our-story">Our Story</a>
         </div>
         <div
           className={`flex flex-col items-start ${openSans.className} font-semibold`}
@@ -99,6 +100,7 @@ const CustomFooter = () => {
           >
             <a href="#">Privacy Policy</a>
             <a href="#">Terms and Conditions</a>
+            <a href=""></a>
           </div>
         </div>
       </div>

@@ -63,10 +63,11 @@ const Page = () => {
       <HeroTemplate
         image="https://images.unsplash.com/photo-1513759565286-20e9c5fad06b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title="Our Vision"
-        subtitle=""
+        subtitle="To be the world’s leading conglomerate brand ,where speed meets substance, and passion meets precision , transforming how people compete, connect, live, and innovate."
       />
       <div className="bg-white flex flex-col items-center gap-5 py-5 pb-20">
-                <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20"></div>
+                <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 "></div>
+
         <h1
           className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
         >
@@ -84,17 +85,19 @@ const Page = () => {
             key={index}
             className="relative h-96"
           >
-                        <div className="absolute inset-0 bg-black/70 z-10 opacity-70" />
+            <div className="absolute inset-0 bg-black/70 z-10 opacity-70" />
 
             <div className="absolute z-20 flex gap-5 flex-col px-10 py-10 justify-center h-full">
-                <h2 className={`${montserrat.className} text-8xl font-bold uppercase`}>
+              <h2
+                className={`${montserrat.className} text-8xl font-bold uppercase`}
+              >
                 {letter.word.split(" ").map((w, i) => (
                   <span key={i}>
-                  <span className="text-[#da291c]">{w.charAt(0)}</span>
-                  {w.slice(1)}{" "}
+                    <span className="text-[#da291c]">{w.charAt(0)}</span>
+                    {w.slice(1)}{" "}
                   </span>
                 ))}
-                </h2>
+              </h2>
               <p className={`${openSans.className} font-semibold pl-2`}>
                 {letter.description}
               </p>

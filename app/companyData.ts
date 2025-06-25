@@ -7,6 +7,7 @@ import akcelInvestmentsLogo from "@/images/investments.png";
 import akcelAcademyLogo from "@/images/academy.png";
 import mining from '@/images/mining.jpg'
 import remaxDisplay from "@/images/remaxDisplay.png";
+import realty from '@/images/realEstate.jpg'
 import gp1 from "@/images/GP/1.jpg";
 import gp2 from "@/images/GP/2.jpg";
 import gp3 from "@/images/GP/3.jpg";
@@ -99,6 +100,7 @@ AKCEL Realty is currently launching new residential developments as joint ventur
 Expanding its vision beyond traditional real estate, AKCEL Realty is also bringing a unique concept to the market—Formula Racing-themed holiday homes, seamlessly combining luxury with a dynamic, sporty lifestyle.`,
     logo: akcelRealtyLogo,
     images: [
+      realty.src,
       "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80", // luxury home
       "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // real estate
       "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
@@ -209,7 +211,7 @@ export const akcelBusinesses = [
     description:
       "Our real estate vision is grounded in bold thinking and contemporary design. We don’t just develop properties we craft environments that elevate everyday living and redefine urban experiences. From iconic residences to cutting-edge commercial hubs, every project is a reflection of thoughtful design, long-term value, and lifestyle relevance. With a commitment to timeless aesthetics, functional innovation, and uncompromising quality, we create spaces that are as aspirational as they are enduring. Active across key global cities—including London and Dubai—our portfolio reflects a sharp understanding of evolving market needs and a deep belief in building for what’s next.",
     image:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      realty.src,
     companies: akcelCompanies.filter((c) =>
       ["akcel-realty", "remax-india"].includes(c.slug)
     ),
@@ -234,7 +236,9 @@ export const akcelBusinesses = [
       "Exploring new frontiers in sustainable and strategic resource ventures.",
     image:
       mining.src,
-    companies: [], // Add mining companies later
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-entertainment-media"].includes(c.slug)
+    ),
   },
   {
     title: "Investment",

@@ -2,10 +2,9 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { akcelBusinesses } from "@/app/companyData";
 import NavBar from "@/components/navbar";
-import HeroTemplate from "@/components/herotemplate";
 import CustomFooter from "@/components/customfooter";
 import { Montserrat, Open_Sans } from "next/font/google";
-import Marquee from "react-fast-marquee";
+import CompanyHeader from "@/components/businesshero";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -38,30 +37,33 @@ const CompanyPage = async ({
 
   return (
     <div className="flex flex-col">
-      <NavBar />
+      <div className="flex flex-col h-screen w-screen">
+        <NavBar />
 
-      <HeroTemplate image={company.image} title={company.title} subtitle="" />
-
+        <div
+          className="relative w-full h-full"
+          style={{
+            backgroundImage: `url(${company.companies[0].images[0]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "bottom",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black/50 opacity-100 z-5" />
+          <CompanyHeader title={company.title} subtitle={company.subtitle} />
+        </div>
+      </div>
       <div className="flex flex-col items-start bg-white py-10 px-10">
-        {company.subtitle && (
-          <blockquote
-            className={`italic text-2xl text-left max-w-4xl text-[#da291c] mb-10 ${montserrat.className}`}
-          >
-            “{company.subtitle}”
-          </blockquote>
-        )}
-
         {company.description.split("\n\n").map((para, index) => (
           <p
             key={index}
-            className={`${openSans.className} text-left text-lg mt-10 w-full  text-black`}
+            className={`${openSans.className} text-left text-lg w-full  text-black`}
           >
             {para}
           </p>
         ))}
       </div>
 
-      <div className="bg-white py-12 ">
+      <div className="bg-white  ">
         <h2
           className={`text-black text-3xl font-semibold mb-8 text-left px-10 ${montserrat.className}`}
         >
@@ -69,56 +71,60 @@ const CompanyPage = async ({
         </h2>
         <div className="flex flex-col mx-auto">
           {company.companies.map((c, index) => {
-            const bgColor = index % 2 === 0 ? "#da291c" : "#000000";
-            const textColor = index % 2 === 0 ? "text-white" : "text-white";
             return (
               <React.Fragment key={index}>
-          <div className={`flex gap-5 items-center bg-[${bgColor}] p-8`}>
-            <div className="flex flex-col">
-              <img
-                src={c.logo.src}
-                alt={c.title}
-                className="object-contain mb-4 w-96 h-48 bg-white p-10"
-              />
-              <a
-                href={c.slug}
-                className={`${openSans.className} tracking-tight inline-flex items-center justify-center gap-1 px-3 py-2 bg-white text-[#da291c] text-sm transition-all mt-5 font-semibold`}
-              >
-                Visit Website
-                <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4 ml-1"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
+                <div
+                  className={`relative gap-5 items-center px-10 py-20 flex`}
+                  style={{
+                    backgroundImage: `url(${
+                      c.images && c.images.length > 0 && c.images[0]
+                        ? c.images[0]
+                        : "https://source.unsplash.com/1600x900/?business,office"
+                    })`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "bottom",
+                  }}
                 >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 5l7 7-7 7"
-            />
-                </svg>
-              </a>
-            </div>
-            <div className="flex flex-col items-start gap-10 pl-10 flex-1">
-              <Marquee gradient gradientColor={bgColor} speed={30}>
-                {c.images.map((im, idx) => (
-            <img
-              src={im}
-              alt=""
-              key={idx}
-              className="w-48 h-36 object-cover mx-5"
-            />
-                ))}
-              </Marquee>
-              <p
-                className={`${openSans.className} tracking-tight ${textColor} text-left`}
-              >
-                {c.description}
-              </p>
-            </div>
-          </div>
+                  <div className="absolute inset-0 bg-black backdrop-blur-[1px] opacity-80 z-0" />
+
+                  {/* Set relative z-index so it's above the overlay, and keep it in the layout */}
+                  <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start md:items-center w-full">
+                    <div className="flex flex-col">
+                      <img
+                        src={c.logo.src}
+                        alt={c.title}
+                        className="object-contain mb-4 w-96 h-48 bg-white p-10"
+                      />
+                      <a
+                        href={c.slug}
+                        className={`${openSans.className} tracking-tight inline-flex items-center justify-center gap-1 px-3 py-2 bg-white text-[#da291c] text-sm transition-all mt-5 font-semibold`}
+                      >
+                        Visit Website
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-4 h-4 ml-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div className="flex flex-col gap-10 flex-1">
+                      <p
+                        className={`${openSans.className} tracking-tight text-white text-lg text-left`}
+                      >
+                        {c.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </React.Fragment>
             );
           })}

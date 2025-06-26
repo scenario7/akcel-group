@@ -75,17 +75,17 @@ const CompanyPage = async ({
               <React.Fragment key={index}>
                 <div
                   className={`relative gap-5 items-center px-10 py-20 flex`}
-                  style={{
-                    backgroundImage: `url(${
-                      c.images && c.images.length > 0 && c.images[0]
-                        ? c.images[0]
-                        : "https://source.unsplash.com/1600x900/?business,office"
-                    })`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "bottom",
-                  }}
+                  // style={{
+                  //   backgroundImage: `url(${
+                  //     c.images && c.images.length > 0 && c.images[0]
+                  //       ? c.images[0]
+                  //       : "https://source.unsplash.com/1600x900/?business,office"
+                  //   })`,
+                  //   backgroundSize: "cover",
+                  //   backgroundPosition: "bottom",
+                  // }}
                 >
-                  <div className="absolute inset-0 bg-black backdrop-blur-[1px] opacity-80 z-0" />
+                  {/* <div className="absolute inset-0 bg-black backdrop-blur-[1px] opacity-80 z-0" /> */}
 
                   {/* Set relative z-index so it's above the overlay, and keep it in the layout */}
                   <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start md:items-center w-full">
@@ -118,7 +118,7 @@ const CompanyPage = async ({
                     </div>
                     <div className="flex flex-col gap-10 flex-1">
                       <p
-                        className={`${openSans.className} tracking-tight text-white text-lg text-left`}
+                        className={`${openSans.className} tracking-tight text-black text-lg text-left`}
                       >
                         {c.description}
                       </p>

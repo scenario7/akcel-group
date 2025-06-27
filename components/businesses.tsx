@@ -61,7 +61,7 @@ const Businesses = () => {
                   {company.title}
                 </h2>
                 <p
-                  className={`${openSans.className} hidden group-hover:block transition-all mb-4`}
+                  className={`${openSans.className} hidden group-hover:block transition-all text-lg mb-4`}
                 >
                   {company.description.split(" ").slice(0, 20).join(" ")}...
                 </p>

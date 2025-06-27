@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import gp7 from "@/images/GP/8.jpg";
 import { Montserrat, Open_Sans } from "next/font/google";
 import Marquee from "react-fast-marquee";
+import DotGrid from "@/animations/DotGrid/DotGrid";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -15,38 +15,6 @@ const montserrat = Montserrat({
 });
 
 const marquee = ["Press Releases", "Events", "In the News", "Podcasts"];
-
-// Sample news data - replace with your actual data
-const latestNews = [
-  {
-    id: 1,
-    title: "Major Partnership Announcement Drives Growth",
-    excerpt: "New strategic alliance opens doors to expanded market opportunities and enhanced service delivery.",
-    date: "December 15, 2024",
-    category: "Business"
-  },
-  {
-    id: 2,
-    title: "Industry Recognition for Innovation Excellence",
-    excerpt: "Company receives prestigious award for breakthrough technology solutions.",
-    date: "December 10, 2024",
-    category: "Awards"
-  },
-  {
-    id: 3,
-    title: "Quarterly Results Exceed Expectations",
-    excerpt: "Strong performance across all business segments demonstrates continued momentum.",
-    date: "December 5, 2024",
-    category: "Financial"
-  },
-  {
-    id: 4,
-    title: "New Product Launch Sets Market Standards",
-    excerpt: "Revolutionary features and enhanced user experience define next generation offering.",
-    date: "November 28, 2024",
-    category: "Product"
-  }
-];
 
 const NewMediaSection = () => {
   return (
@@ -69,151 +37,46 @@ const NewMediaSection = () => {
             </h1>
           ))}
       </Marquee>
-      
+
       <div className="flex min-h-96">
         {/* Left Section - Media */}
         <div className="flex-1">
           <div
-            className="relative flex items-center justify-center h-full bg-cover bg-center"
-            style={{ backgroundImage: `url('${gp7.src}')` }}
+            className="relative flex items-end justify-start h-96 bg-cover bg-center"
+            style={{
+              backgroundImage: `url('https://gulfbusiness.com/wp-content/uploads/2025/06/Atiqa-Mir-2.jpg')`,
+            }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/90 z-10" />
-            <div className="absolute flex gap-5 items-center flex-col z-20">
-              <h1 className={`${montserrat.className} text-6xl font-bold text-white`}>
-                MEDIA
-              </h1>
-              <p className={`${openSans.className} text-white font-semibold text-center px-4`}>
-                From newsroom features to major moments — see how we&apos;re shaping
-                conversations.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <a
-                  href="/media"
-                  className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all`}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/90 z-10 opacity-90" />
+            <div className="relative z-20 flex flex-col items-start mb-8 ml-8 gap-2">
+                <div
+                className={`px-3 ${openSans.className} uppercase font-semibold animate-blink-bg`}
+                style={{ transition: "background-color 0.5s" }}
                 >
-                  Press Releases
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="/media"
-                  className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all`}
-                >
-                  Events
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="/media"
-                  className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-3 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all`}
-                >
-                  Podcasts
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Section - Latest News */}
-        <div className="flex-1 bg-gray-50 p-8">
-          <div className="h-full flex flex-col">
-            <div className="mb-6">
-              <h2 className={`${montserrat.className} text-4xl font-bold text-gray-900 mb-2`}>
-                LATEST NEWS
+                Latest
+                </div>
+                <style jsx>{`
+                @keyframes blink-bg {
+                  0%, 100% { background-color: #da291c; }
+                  50% { background-color: #000; }
+                }
+                .animate-blink-bg {
+                  animation: blink-bg 2s infinite;
+                }
+                `}</style>
+              <h2
+                className={`${montserrat.className} text-3xl md:text-4xl font-bold text-white mb-3`}
+              >
+                Atiqa Mir joins Akcel GP
               </h2>
-              <p className={`${openSans.className} text-gray-600`}>
-                Stay updated with our most recent announcements and developments
-              </p>
-            </div>
-            
-            <div className="flex-1 space-y-6">
-              {latestNews.map((news) => (
-                <article key={news.id} className="border-b border-gray-200 pb-6 last:border-b-0">
-                  <div className="flex items-start justify-between mb-2">
-                    <span className={`${openSans.className} text-xs font-semibold text-[#da291c] uppercase tracking-wide`}>
-                      {news.category}
-                    </span>
-                    <span className={`${openSans.className} text-xs text-gray-500`}>
-                      {news.date}
-                    </span>
-                  </div>
-                  <h3 className={`${montserrat.className} text-lg font-semibold text-gray-900 mb-2 hover:text-[#da291c] transition-colors cursor-pointer`}>
-                    {news.title}
-                  </h3>
-                  <p className={`${openSans.className} text-sm text-gray-600 mb-3`}>
-                    {news.excerpt}
-                  </p>
-                  <a
-                    href={`/news/${news.id}`}
-                    className={`${openSans.className} text-sm font-medium text-[#da291c] hover:text-gray-900 inline-flex items-center gap-1 transition-colors`}
-                  >
-                    Read More
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-3 h-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
-                </article>
-              ))}
-            </div>
-            
-            <div className="mt-6 pt-6 border-t border-gray-200">
               <a
                 href="/news"
-                className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors`}
+                className={`${openSans.className} tracking-tight inline-flex items-center hover:font-semibold gap-1 px-4 py-2 hover:bg-[#da291c] hover:text-white text-black bg-white transition-all`}
               >
                 View All News
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
+                  className="w-4 h-4 ml-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -225,6 +88,114 @@ const NewMediaSection = () => {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section - Latest News */}
+        <div className="flex-1 bg-black p-8 relative overflow-hidden">
+          {/* DotGrid as background */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              zIndex: 0,
+              pointerEvents: "none",
+            }}
+          >
+            <DotGrid
+              dotSize={5}
+              gap={15}
+              baseColor="#da291c30"
+              activeColor="#da291c"
+              proximity={120}
+              shockRadius={250}
+              shockStrength={5}
+              resistance={750}
+              returnDuration={1.5}
+            />
+          </div>
+          {/* Content above DotGrid */}
+          <div className="h-full flex flex-col justify-center relative z-10">
+            <div className="mb-6">
+              <h2
+          className={`${montserrat.className} text-4xl font-bold text-center text-white mb-2`}
+              >
+          MEDIA
+              </h2>
+              <p
+          className={`${openSans.className} text-gray-200 text-center font-semibold`}
+              >
+          From newsroom features to major moments — see how we&apos;re shaping
+          conversations.
+              </p>
+            </div>
+
+            <div className="mt-6 gap-10 flex">
+              <a
+          href="/podcasts"
+          className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors`}
+              >
+          Podcasts
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+              </a>
+
+              <a
+          href="/press-releases"
+          className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors`}
+              >
+          Press Releases
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+              </a>
+
+              <a
+          href="/events"
+          className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors`}
+              >
+          Events
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
               </a>
             </div>
           </div>

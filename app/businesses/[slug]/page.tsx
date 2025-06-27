@@ -22,6 +22,9 @@ export async function generateStaticParams() {
   }));
 }
 
+// Animated Scroll Chevrons Component
+
+
 // 👇 Now this MUST be an async component to handle the Promise params
 const CompanyPage = async ({
   params,
@@ -43,16 +46,19 @@ const CompanyPage = async ({
         <div
           className="relative w-full h-full"
           style={{
-            backgroundImage: `url(${company.companies[0].images[0]})`,
+            backgroundImage: `url(${company.companies[0].images[1]})`,
             backgroundSize: "cover",
             backgroundPosition: "bottom",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black/50 opacity-100 z-5" />
-          <CompanyHeader title={company.title} subtitle={company.subtitle} />
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black opacity-100 z-5" />
+          <CompanyHeader
+            title={company.subtitle}
+            subtitle={company.description}
+          />
         </div>
       </div>
-      <div className="flex flex-col items-start bg-white py-10 px-10">
+      {/* <div className="flex flex-col items-start bg-white py-10 px-10">
         {company.description.split("\n\n").map((para, index) => (
           <p
             key={index}
@@ -61,9 +67,9 @@ const CompanyPage = async ({
             {para}
           </p>
         ))}
-      </div>
+      </div> */}
 
-      <div className="bg-white  ">
+      <div className="bg-white pt-8">
         <h2
           className={`text-black text-3xl font-semibold mb-8 text-left px-10 ${montserrat.className}`}
         >
@@ -72,60 +78,41 @@ const CompanyPage = async ({
         <div className="flex flex-col mx-auto">
           {company.companies.map((c, index) => {
             return (
-              <React.Fragment key={index}>
-                <div
-                  className={`relative gap-5 items-center px-10 py-20 flex`}
-                  // style={{
-                  //   backgroundImage: `url(${
-                  //     c.images && c.images.length > 0 && c.images[0]
-                  //       ? c.images[0]
-                  //       : "https://source.unsplash.com/1600x900/?business,office"
-                  //   })`,
-                  //   backgroundSize: "cover",
-                  //   backgroundPosition: "bottom",
-                  // }}
-                >
-                  {/* <div className="absolute inset-0 bg-black backdrop-blur-[1px] opacity-80 z-0" /> */}
-
-                  {/* Set relative z-index so it's above the overlay, and keep it in the layout */}
-                  <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start md:items-center w-full">
-                    <div className="flex flex-col">
-                      <img
-                        src={c.logo.src}
-                        alt={c.title}
-                        className="object-contain mb-4 w-96 h-48 bg-white p-10"
+              <div className={`flex ${index%2===0 ? 'flex-row' : 'flex-row-reverse'} items-center`} key={index}>
+                <div className="w-1/2 flex flex-col items-center px-20 gap-10">
+                  <img
+                    src={c.logo.src}
+                    alt=""
+                    className="h-36 w-48 object-contain"
+                  />
+                  <p
+                    className={`${openSans.className} text-black text-lg tracking-tight`}
+                  >
+                    {c.description}
+                  </p>
+                  <a
+                    href="/press-releases"
+                    className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors`}
+                  >
+                    Visit Website
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
                       />
-                      <a
-                        href={c.slug}
-                        className={`${openSans.className} tracking-tight inline-flex items-center justify-center gap-1 px-3 py-2 bg-white text-[#da291c] text-sm transition-all mt-5 font-semibold`}
-                      >
-                        Visit Website
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-4 h-4 ml-1"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                    <div className="flex flex-col gap-10 flex-1">
-                      <p
-                        className={`${openSans.className} tracking-tight text-black text-lg text-left`}
-                      >
-                        {c.description}
-                      </p>
-                    </div>
-                  </div>
+                    </svg>
+                  </a>
                 </div>
-              </React.Fragment>
+                <img src={c.images[0]} alt="" className="w-1/2" />
+              </div>
             );
           })}
         </div>

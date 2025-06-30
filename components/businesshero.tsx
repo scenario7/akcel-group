@@ -26,7 +26,7 @@ const ScrollChevrons = () => {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         data-slot="icon"
-        className={`w-10 h-10 text-[#ffffff]`}
+        className={`w-10 h-10 text-[#000000]`}
         style={{
         animation: "chevronFade 2s infinite",
         animationDelay: `${i * 0.33}s`,
@@ -63,7 +63,7 @@ const CompanyHeader = ({
   subtitle: string;
 }) => {
   return (
-    <div className="absolute z-10 h-full w-full flex flex-col gap-10 items-center justify-center text-white text-center">
+    <div className="absolute z-10 h-full w-full flex flex-col gap-10 px-20 items-start justify-center text-black text-left">
       <TypeAnimation
         sequence={[title, 1000]}
         wrapper="span"
@@ -73,11 +73,11 @@ const CompanyHeader = ({
         cursor={false}
       />
       <p
-        className={`${openSans.className} text-white text-xl font-semibold w-3/4`}
+        className={`${openSans.className} text-black text-xl text-left font-semibold w-3/4`}
       >
         {subtitle}
       </p>
-      <ScrollChevrons />
+      <ScrollChevrons/>
     </div>
   );
 };

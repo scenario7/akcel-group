@@ -39,35 +39,27 @@ const CompanyPage = async ({
   if (!company) return notFound();
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-white">
       <div className="flex flex-col h-screen w-screen">
-        <NavBar />
+        <NavBar lightMode/>
 
         <div
-          className="relative w-full h-full"
-          style={{
-            backgroundImage: `url(${company.companies[0].images[1]})`,
-            backgroundSize: "cover",
-            backgroundPosition: "bottom",
-          }}
+          className="relative w-full h-full flex items-center justify-end"
+          // style={{
+          //   backgroundImage: `url(${company.companies[0].images[1]})`,
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "bottom",
+          // }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black opacity-100 z-5" />
+          <img src={company.companies[0].images[1]} alt="" className="absolute z-0 w-auto h-4/5 object-contain rounded-xl px-20"/>
+          {/* White to transparent gradient overlay from left to right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
           <CompanyHeader
             title={company.subtitle}
             subtitle={company.description}
           />
         </div>
       </div>
-      {/* <div className="flex flex-col items-start bg-white py-10 px-10">
-        {company.description.split("\n\n").map((para, index) => (
-          <p
-            key={index}
-            className={`${openSans.className} text-left text-lg w-full  text-black`}
-          >
-            {para}
-          </p>
-        ))}
-      </div> */}
 
       <div className="bg-white pt-8">
         <h2

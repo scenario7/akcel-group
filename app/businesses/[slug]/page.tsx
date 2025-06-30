@@ -103,7 +103,7 @@ const CompanyPage = async ({
                     </svg>
                   </a>
                 </div>
-                <img src={c.images[0]} alt="" className="w-1/2" />
+                <img src={c.images[0]} alt="" className="w-1/2 p-10" />
               </div>
             );
           })}

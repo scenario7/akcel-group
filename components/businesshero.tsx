@@ -73,7 +73,7 @@ const CompanyHeader = ({
         cursor={false}
       />
       <p
-        className={`${openSans.className} text-black text-xl text-left font-semibold w-3/4`}
+        className={`${openSans.className} text-black text-xl text-justify font-semibold w-3/4`}
       >
         {subtitle}
       </p>

@@ -3,8 +3,7 @@ import NavBar from "@/components/navbar";
 import HeroTemplate from "@/components/herotemplate";
 import CustomFooter from "@/components/customfooter";
 import { Montserrat, Open_Sans } from "next/font/google";
-import Marquee from "react-fast-marquee";
-import { akcelBusinesses } from "../companyData";
+
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,13 +15,6 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const flagUrls = [
-  { src: "https://flagcdn.com/gb.svg", alt: "UK" },
-  { src: "https://flagcdn.com/ae.svg", alt: "UAE" },
-  { src: "https://flagcdn.com/in.svg", alt: "India" },
-  { src: "https://flagcdn.com/ie.svg", alt: "Ireland" },
-  { src: "https://flagcdn.com/it.svg", alt: "Italy" },
-];
 
 const Page = () => {
   return (
@@ -68,21 +60,6 @@ const Page = () => {
                 sustainability converge.
               </p>
             </div>
-            <Marquee
-              gradient
-              speed={40}
-              pauseOnHover={true}
-              className="my-10 mx-10"
-            >
-              {flagUrls.map((flag) => (
-                <img
-                  key={flag.alt}
-                  src={flag.src}
-                  alt={flag.alt}
-                  className="w-24 h-16 object-cover mx-6 shadow"
-                />
-              ))}
-            </Marquee>
           </div>
 
           {/* What We Do */}
@@ -134,18 +111,6 @@ const Page = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="grid grid-cols-3 gap-8 mt-20 mx-10">
-                {akcelBusinesses.slice(0, 6).map((company) => (
-                  <div key={company.image} className="flex flex-col items-center">
-                    <img
-                      src={company.image}
-                      alt={company.title}
-                      className="w-40 h-28 object-cover shadow mb-3"
-                    />
-                    <span className={`text-black font-medium text-center ${openSans.className}`}>{company.title}</span>
-                  </div>
-                ))}
             </div>
           </div>
         </div>

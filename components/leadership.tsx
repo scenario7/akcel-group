@@ -19,15 +19,14 @@ const Leadership = () => {
   const sectionRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   return (
-    <div className="flex flex-col items-start bg-[#ffffff] w-full">
-      <div className="flex items-center gap-10 py-5 px-20">
-        <div className="flex flex-col items-center gap-5">
-          <h1
-            className={`${montserrat.className} text-center text-3xl font-semibold text-black text-left`}
-          >
-            Leadership in Motion
-          </h1>
-        </div>
+    <div className="flex flex-col items-start bg-white relative overflow-hidden">
+      {/* Header Section */}
+      <div className="flex items-center justify-start gap-10 py-5 px-6 sm:px-10 md:px-20">
+        <h1
+          className={`${montserrat.className} text-3xl font-semibold text-black text-left w-[20%]`}
+        >
+          Leadership in Motion
+        </h1>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20"></div>
         <p className={`${openSans.className} text-lg text-black`}>
           Progress isn’t passive -it’s powered by action, bold thinking, and
@@ -45,11 +44,11 @@ const Leadership = () => {
             link: "/leadership",
           },
           {
-            name: "Establishing a Foundation of Success",
+            name: "Performance. Precision. Purpose. Innovation. — The AKCEL Vision.",
             title:
               "At AKCEL Group, we believe in building enduring legacies through innovation, integrity, and impact. Our journey is rooted in a deep commitment to excellence across diverse industries—from real estate and entertainment to media and lifestyle. We are more than a business group; we are a vision-driven collective shaping the future with purpose and precision.",
             img: "https://images.unsplash.com/photo-1492366254240-43affaefc3e3?q=80&w=650&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "/our-story",
+            link: "/our-vision",
           },
         ].map((item, index) => (
           <div

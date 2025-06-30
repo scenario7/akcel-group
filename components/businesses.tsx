@@ -18,14 +18,12 @@ const Businesses = () => {
   return (
     <div className="flex flex-col items-start bg-white relative overflow-hidden">
       {/* Header Section */}
-      <div className="flex items-center gap-10 py-5 px-6 sm:px-10 md:px-20">
-        <div className="flex flex-col items-center gap-5">
+      <div className="flex items-center justify-start gap-10 py-5 px-6 sm:px-10 md:px-20">
           <h1
-            className={`${montserrat.className} text-3xl font-semibold text-black text-left`}
+            className={`${montserrat.className} text-3xl font-semibold text-black text-left w-[25%]`}
           >
             Businesses
           </h1>
-        </div>
         <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20" />
         <p className={`${openSans.className} text-black text-lg text-left`}>
           At AKCEL Group, we create enduring value through innovation,

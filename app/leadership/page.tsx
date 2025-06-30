@@ -27,9 +27,6 @@ const Page = () => {
       <section className="flex flex-col items-center bg-white py-16 px-6 md:px-20">
         <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 mb-5" />
 
-        <h1 className={`${montserrat.className} text-4xl font-semibold text-center text-black mb-12`}>
-          Leadership
-        </h1>
 
         <article className="flex flex-col md:flex-row gap-10 items-start w-full">
   <div className="bg-black w-full md:w-1/4 aspect-square flex flex-col justify-between overflow-hidden shadow-lg">

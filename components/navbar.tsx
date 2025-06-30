@@ -41,7 +41,7 @@ const Navbar = () => {
           <NavigationMenuTrigger
             className={`${openSans.className} bg-transparent text-white font-semibold tracking-tight`}
           >
-            Our Businesses
+            Businesses
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <div

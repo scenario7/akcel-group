@@ -62,8 +62,8 @@ const Page = () => {
       <NavBar />
       <HeroTemplate
         image="https://images.unsplash.com/photo-1513759565286-20e9c5fad06b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        title="Our Vision"
-        subtitle="To be the world’s leading conglomerate brand ,where speed meets substance, and passion meets precision , transforming how people compete, connect, live, and innovate."
+        title=""
+        subtitle="To be a global leader where speed meets substance and passion meets precision — redefining how we compete, connect, and innovate."
       />
       <div className="bg-white flex flex-col items-center gap-5 py-5 pb-20">
                 <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 "></div>

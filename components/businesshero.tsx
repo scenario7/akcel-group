@@ -68,12 +68,12 @@ const CompanyHeader = ({
         sequence={[title, 1000]}
         wrapper="span"
         speed={50}
-        className={`${montserrat.className} text-5xl md:text-8xl font-bold uppercase`}
+        className={`${montserrat.className} text-5xl md:text-8xl font-bold uppercase w-3/4`}
         repeat={Infinity}
         cursor={false}
       />
       <p
-        className={`${openSans.className} text-black text-xl text-justify font-semibold w-3/4`}
+        className={`${openSans.className} text-black text-xl text-left font-semibold w-1/2`}
       >
         {subtitle}
       </p>

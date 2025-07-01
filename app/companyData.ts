@@ -1,3 +1,4 @@
+import radius from '@/images/radius.png'
 import akcelGpLogo from "@/images/gp.png";
 import akcelMediaLogo from "@/images/entertainment.png";
 import jetkingLogo from "@/images/jetking.png";
@@ -169,6 +170,28 @@ Backed by expertise and a commitment to excellence, AKCEL Investments is poised 
       "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80", // investment growth
     ],
   },
+  {
+    title: "Radius ",
+    slug: "radius",
+    description: `Radius Equipment is engaged in supplying a wide range of
+Construction Equipment with Best Service & Spare Parts
+Availability. Radius is best known for its Customised Solutions
+and After Sales Support. The company's head office is located at Pune (Head Office) and branch offices located at various
+prominent locations like Navi Mumbai , Nagpur, Aurangabad , Nashik Etc. The company's growth is
+increasing leaps and bound year per year and has increased the market share from 29 percent to 48
+percent. The Company's team work and dedication has yielded the Revenue Generation to a present
+scenario of Rs. 1100 Cr. In last 10 years.`,
+    logo: radius,
+    images: [
+      mining.src,
+      "https://images.unsplash.com/photo-1709489662983-3674d790b224?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // finance
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", // stock market
+      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80", // business meeting
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80", // financial planning
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80", // investment growth
+    ],
+    link: "https://radiusuae.com",
+  },
 ];
 
 export const akcelBusinesses = [
@@ -214,7 +237,7 @@ export const akcelBusinesses = [
     image:
       realty.src,
     companies: akcelCompanies.filter((c) =>
-      ["akcel-realty", "remax-india"].includes(c.slug)
+      ["akcel-realty", "remax-india", "akcel-homes"].includes(c.slug)
     ),
   },
   {
@@ -231,14 +254,14 @@ export const akcelBusinesses = [
   },
   {
     title: "Mining",
-    subtitle: "",
+    subtitle: "Strength Beneath. Vision Above.",
     slug: "mining",
     description:
-      "Exploring new frontiers in sustainable and strategic resource ventures.",
+      "As a core sector of Akcel Group, Akcel Mining is committed to responsible resource extraction that fuels industries and empowers economies. With a focus on innovation, safety, and sustainability, we harness the earth’s potential while preserving its future. From exploration to production, Akcel Mining delivers precision, performance, and long-term value.",
     image:
       mining.src,
     companies: akcelCompanies.filter((c) =>
-      ["akcel-entertainment-media"].includes(c.slug)
+      ["radius"].includes(c.slug)
     ),
   },
   {

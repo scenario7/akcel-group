@@ -22,9 +22,6 @@ export async function generateStaticParams() {
   }));
 }
 
-// Animated Scroll Chevrons Component
-
-
 // 👇 Now this MUST be an async component to handle the Promise params
 const CompanyPage = async ({
   params,
@@ -40,18 +37,16 @@ const CompanyPage = async ({
 
   return (
     <div className="flex flex-col bg-white">
+      {/* Hero Section */}
       <div className="flex flex-col h-screen w-screen">
-        <NavBar lightMode/>
+        <NavBar lightMode />
 
-        <div
-          className="relative w-full h-full flex items-center justify-end"
-          // style={{
-          //   backgroundImage: `url(${company.companies[0].images[1]})`,
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "bottom",
-          // }}
-        >
-          <img src={company.companies[0].images[1]} alt="" className="absolute z-0 w-auto h-4/5 object-contain rounded-xl px-20"/>
+        <div className="relative w-full h-full flex items-center justify-end">
+          <img 
+            src={company.companies[0].images[1]} 
+            alt="" 
+            className="absolute z-0 w-auto h-3/5 sm:h-4/5 object-contain rounded-xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
+          />
           {/* White to transparent gradient overlay from left to right */}
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
           <CompanyHeader
@@ -61,31 +56,37 @@ const CompanyPage = async ({
         </div>
       </div>
 
-      <div className="bg-white pt-8">
+      {/* Brands Section */}
+      <div className="bg-white pt-6 sm:pt-8">
         <h2
-          className={`text-black text-3xl font-semibold mb-8 text-left px-10 ${montserrat.className}`}
+          className={`text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8 text-left px-4 sm:px-6 md:px-8 lg:px-10 ${montserrat.className}`}
         >
           Brands
         </h2>
+        
         <div className="flex flex-col mx-auto">
           {company.companies.map((c, index) => {
             return (
-              <div className={`flex ${index%2===0 ? 'flex-row' : 'flex-row-reverse'} items-center`} key={index}>
-                <div className="w-1/2 flex flex-col items-center px-20 gap-10">
+              <div 
+                className={`flex flex-col lg:flex-row ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-6 lg:gap-0 py-8 lg:py-12`} 
+                key={index}
+              >
+                {/* Content Section */}
+                <div className="w-full lg:w-1/2 flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 gap-6 lg:gap-10">
                   <img
                     src={c.logo.src}
                     alt=""
-                    className="h-36 w-48 object-contain"
+                    className="h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-40 lg:h-32 lg:w-44 xl:h-36 xl:w-48 object-contain"
                   />
                   <p
-                    className={`${openSans.className} text-black text-lg tracking-tight`}
+                    className={`${openSans.className} text-black text-sm sm:text-base md:text-lg tracking-tight text-center lg:text-left leading-relaxed`}
                   >
                     {c.description}
                   </p>
                   <a
                     href={c.link}
                     target="_blank"
-                    className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors`}
+                    className={`${openSans.className} w-full max-w-xs lg:max-w-none inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-[#da291c] text-white text-sm sm:text-base font-medium hover:bg-gray-900 transition-colors rounded-md lg:rounded-none`}
                   >
                     Visit Website
                     <svg
@@ -104,7 +105,15 @@ const CompanyPage = async ({
                     </svg>
                   </a>
                 </div>
-                <img src={c.images[0]} alt="" className="w-1/2 p-10" />
+                
+                {/* Image Section */}
+                <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-10">
+                  <img 
+                    src={c.images[0]} 
+                    alt="" 
+                    className="w-full h-auto object-contain rounded-lg lg:rounded-none"
+                  />
+                </div>
               </div>
             );
           })}

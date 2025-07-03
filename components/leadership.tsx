@@ -18,21 +18,21 @@ const Leadership = () => {
   return (
     <div className="flex flex-col items-start bg-white relative overflow-hidden">
       {/* Header Section */}
-      <div className="flex items-center justify-start gap-10 py-5 px-6 sm:px-10 md:px-20">
+      <div className="flex md:flex-row flex-col md:items-center justify-start gap-3 md:gap-10 py-5 px-6 sm:px-10 md:px-20">
         <h1
-          className={`${montserrat.className} text-3xl font-semibold text-black text-left w-[20%]`}
+          className={`${montserrat.className} text-xl md:text-3xl font-semibold text-black text-left md:w-[20%]`}
         >
           Leadership in Motion
         </h1>
-        <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20"></div>
-        <p className={`${openSans.className} text-lg text-black`}>
+        <div className="bg-gradient-to-r md:bg-gradient-to-b from-transparent via-[#da291c] to-transparent md:w-[2px] md:h-20 h-[2px] w-32"></div>
+        <p className={`${openSans.className} text-sm md:text-lg text-black`}>
           Progress isn’t passive - it’s powered by action, bold thinking, and
           decisive leadership. We lead with agility, foresight, and a
           commitment to shaping the future.
         </p>
       </div>
 
-      <div className="flex w-full">
+      <div className="flex md:flex-row flex-col w-full">
       {/* First Card - Amit Kaushal */}
       <div
         className="relative flex flex-col items-start w-full h-96 px-10 py-10 justify-end transition-all duration-1000 ease-out bg-center bg-cover"

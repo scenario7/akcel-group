@@ -18,14 +18,14 @@ const Businesses = () => {
   return (
     <div className="flex flex-col items-start bg-white relative overflow-hidden">
       {/* Header Section */}
-      <div className="flex items-center justify-start gap-10 py-5 px-6 sm:px-10 md:px-20">
+      <div className="flex md:flex-row flex-col md:items-center justify-start gap-3 md:gap-10 py-5 px-6 sm:px-10 md:px-20">
           <h1
-            className={`${montserrat.className} text-3xl font-semibold text-black text-left w-[25%]`}
+            className={`${montserrat.className} text-xl md:text-3xl font-semibold text-black text-left md:w-[25%]`}
           >
             Businesses
           </h1>
-        <div className="bg-gradient-to-b from-transparent via-[#da291c] to-transparent w-[2px] h-20" />
-        <p className={`${openSans.className} text-black text-lg text-left`}>
+        <div className="bg-gradient-to-r md:bg-gradient-to-b from-transparent via-[#da291c] to-transparent md:w-[2px] md:h-20 h-[2px] w-32"></div>
+        <p className={`${openSans.className} text-sm md:text-lg text-black`}>
           At AKCEL Group, we create enduring value through innovation,
           integrity, and strategic clarity. Operating across diverse industries,
           we are a vision-led collective shaping the future with purpose and
@@ -34,13 +34,13 @@ const Businesses = () => {
       </div>
 
       {/* Grid Section */}
-      <div className="w-full px-6 sm:px-10 md:px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="w-full md:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {akcelBusinesses.map((company, index) => (
             <div
               key={index}
               className={`relative h-96 w-full overflow-hidden shadow-xl group transition-all ${
-                index === 0 ? "col-span-3" : "col-span-1"
+                index === 0 ? "md:col-span-3" : "col-span-1"
               }`}
               style={{
                 backgroundImage: `url(${company.image})`,

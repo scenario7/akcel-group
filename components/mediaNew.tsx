@@ -42,7 +42,7 @@ const NewMediaSection = () => {
         {/* Left Section - Media */}
         <div className="flex-1 order-2 lg:order-1">
           <div
-            className="relative flex items-end justify-start h-full bg-cover bg-center"
+            className="relative flex items-end justify-start h-60 md:h-full bg-cover bg-center"
             style={{
               backgroundImage: `url('https://gulfbusiness.com/wp-content/uploads/2025/06/Atiqa-Mir-2.jpg')`,
             }}

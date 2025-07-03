@@ -69,11 +69,11 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black/50 opacity-100 -z-5" />
 
       {/* Left-aligned Text */}
-      <div className="absolute flex items-center gap-5 top-[40%] left-6 sm:left-12 md:left-20 text-white text-left">
+      <div className="absolute flex md:flex-row flex-col items-start md:items-center md:gap-5 top-[40%] left-6 sm:left-12 md:left-20 text-white text-left">
         <motion.h1
           layout
           transition={{ type: "spring", duration: 0.6, damping: 20 }}
-          className={`text-5xl sm:text-6xl md:text-6xl font-semibold ${montserrat.className} mb-2`}
+          className={`text-3xl md:text-6xl font-semibold ${montserrat.className} mb-2`}
         >
           AKCEL Group <span className="text-[#da291c]">|</span>
         </motion.h1>
@@ -84,7 +84,7 @@ const HeroSection = () => {
         >
           <RotatingText
             texts={rotatingWords}
-            mainClassName={`text-5xl sm:text-6xl bg-[#da291c] rounded-lg px-4 py-2 md:text-6xl font-semibold ${montserrat.className}`}
+            mainClassName={`text-3xl bg-[#da291c] rounded-lg px-2 py-1 md:px-4 md:py-2 md:text-6xl font-semibold ${montserrat.className}`}
             staggerFrom="last"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}

@@ -69,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
             alt="Akcel Group Logo"
             height={40}
             width={160}
-            className="h-12  lg:h-24 w-auto object-contain"
+            className="h-16 lg:h-24 w-auto object-contain"
             priority
           />
         </Link>

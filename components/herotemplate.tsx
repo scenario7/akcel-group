@@ -39,12 +39,12 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
       className="absolute inset-0 bg-gradient-to-b from-[#e33439] to-transparent"
       />
       <h1
-      className={`${montserrat.className} font-bold text-white text-6xl uppercase relative z-10`}
+      className={`${montserrat.className} font-bold text-white text-3xl md:text-6xl uppercase text-center relative z-10 px-10`}
       >
       {title}
       </h1>
       {subtitle && (
-      <p className="text-white tracking-tight font-semibold text-3xl mt-5 relative z-10" >{subtitle}</p>
+      <p className="text-white tracking-tight font-semibold text-center text-3xl mt-5 relative z-10" >{subtitle}</p>
       )}
     </div>
   );

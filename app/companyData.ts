@@ -28,6 +28,8 @@ import remax4 from "@/images/remax/4.jpg";
 import remax5 from "@/images/remax/5.jpg";
 import remax6 from "@/images/remax/6.jpg";
 import remax7 from "@/images/remax/7.jpg";
+import jetkingshow from '@/images/jetking1.png'
+import technology from '@/images/technology.png'
 
 export const akcelCompanies = [
   {
@@ -83,8 +85,8 @@ Specializing in IT infrastructure services, the company delivers comprehensive a
 With a commitment to innovation, reliability, and excellence, Jetking Technologies continues to empower businesses with the technology and expertise required to thrive in a rapidly changing digital landscape.`,
     logo: jetkingLogo,
     images: [
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80", // IT team
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80", // server room
+      jetkingshow.src, // IT team
+      technology.src, // server room
       "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&q=80", // coding
       "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", // tech workspace
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80", // developer
@@ -212,20 +214,9 @@ export const akcelBusinesses = [
     description:
       "Driving digital transformation and IT innovation across industries.",
     image:
-      "https://images.unsplash.com/photo-1673825496543-b9609b997baf?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technology.src,
     companies: akcelCompanies.filter((c) =>
       ["jetking-technologies"].includes(c.slug)
-    ),
-  },
-  {
-    title: "Education",
-    subtitle: "",
-    slug: "education",
-    description: "Empowering talent with industry-focused training and skills.",
-    image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=3032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    companies: akcelCompanies.filter((c) =>
-      ["akcel-gp-academy"].includes(c.slug)
     ),
   },
   {
@@ -274,6 +265,17 @@ export const akcelBusinesses = [
       investment.src,
     companies: akcelCompanies.filter((c) =>
       ["akcel-investments"].includes(c.slug)
+    ),
+  },
+    {
+    title: "Education",
+    subtitle: "",
+    slug: "education",
+    description: "Empowering talent with industry-focused training and skills.",
+    image:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=3032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    companies: akcelCompanies.filter((c) =>
+      ["akcel-gp-academy"].includes(c.slug)
     ),
   },
 ];

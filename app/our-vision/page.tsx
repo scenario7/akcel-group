@@ -20,7 +20,7 @@ const letters = [
     description:
       "Aspiration drives us to set ambitious goals and reach new heights.",
     image:
-      "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1600&q=100&auto=format&fit=crop&dpr=2",
+      "https://plus.unsplash.com/premium_photo-1661840431323-e31d09223134?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     letter: "K",
@@ -28,7 +28,7 @@ const letters = [
     description:
       "Knowledge empowers us to innovate and make informed decisions.",
     image:
-      "https://images.unsplash.com/photo-1492366254240-43affaefc3e3?w=1600&q=100&auto=format&fit=crop&dpr=2",
+      "https://images.unsplash.com/photo-1609619385076-36a873425636?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     letter: "C",
@@ -36,7 +36,7 @@ const letters = [
     description:
       "Clarity and Consistency ensure we stay focused and reliable in our actions.",
     image:
-      "https://images.unsplash.com/photo-1469026140142-cb239ea68152?w=1600&q=100&auto=format&fit=crop&dpr=2",
+      "https://images.unsplash.com/photo-1686083051153-5b870b5cd115?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     letter: "E",
@@ -44,7 +44,7 @@ const letters = [
     description:
       "Excellence is our commitment to delivering the highest standards in everything we do.",
     image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=100&auto=format&fit=crop&dpr=2",
+      "https://images.unsplash.com/photo-1469026140142-cb239ea68152?w=1600&q=100&auto=format&fit=crop&dpr=2",
   },
   {
     letter: "L",
@@ -52,7 +52,7 @@ const letters = [
     description:
       "Legacy inspires us to create lasting impact for future generations.",
     image:
-      "https://images.unsplash.com/photo-1469026140142-cb239ea68152?w=1600&q=100&auto=format&fit=crop&dpr=2",
+      "https://images.unsplash.com/photo-1581855339095-0c282d58527b?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -62,16 +62,16 @@ const Page = () => {
       <NavBar />
       <HeroTemplate
         image="https://images.unsplash.com/photo-1513759565286-20e9c5fad06b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        title=""
-        subtitle="To be a global leader where speed meets substance and passion meets precision — redefining how we compete, connect, and innovate."
+        title="What akcel stands for"
+        subtitle=""
       />
       <div className="bg-white flex flex-col items-center gap-5 py-5 pb-20">
                 <div className="bg-gradient-to-b from-transparent to-[#da291c] w-[2px] h-20 "></div>
 
         <h1
-          className={`${montserrat.className} text-center text-3xl font-semibold text-black`}
+          className={`${montserrat.className} text-center text-xl font-semibold text-black`}
         >
-          What AKCEL stands for
+          Our goal is to be a global leader where speed meets substance and passion meets precision — redefining how we compete, connect, and innovate.
         </h1>
       </div>
       <div className="">
@@ -80,7 +80,7 @@ const Page = () => {
             style={{
               backgroundImage: `url(${letter.image})`,
               backgroundSize: "cover",
-              backgroundPosition: "bottom",
+              backgroundPosition: "center",
             }}
             key={index}
             className="relative h-96"
@@ -89,7 +89,7 @@ const Page = () => {
 
             <div className="absolute z-20 flex gap-5 flex-col px-10 py-10 justify-center h-full">
               <h2
-                className={`${montserrat.className} text-8xl font-bold uppercase`}
+                className={`${montserrat.className} text-4xl md:text-8xl font-bold uppercase`}
               >
                 {letter.word.split(" ").map((w, i) => (
                   <span key={i}>
@@ -98,7 +98,7 @@ const Page = () => {
                   </span>
                 ))}
               </h2>
-              <p className={`${openSans.className} font-semibold pl-2`}>
+              <p className={`${openSans.className} font-semibold md:pl-2`}>
                 {letter.description}
               </p>
             </div>

@@ -38,7 +38,7 @@ const CompanyPage = async ({
   return (
     <div className="flex flex-col bg-white">
       {/* Hero Section */}
-      <div className="flex flex-col h-screen w-screen">
+      <div className="flex flex-col h-[550px] md:h-screen w-screen">
         <NavBar lightMode />
 
         <div className="relative w-full h-full flex items-center justify-end">
@@ -48,7 +48,7 @@ const CompanyPage = async ({
             className="absolute z-0 w-auto h-3/5 sm:h-4/5 object-contain rounded-xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
           />
           {/* White to transparent gradient overlay from left to right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
           <CompanyHeader
             title={company.subtitle}
             subtitle={company.description}
@@ -59,7 +59,7 @@ const CompanyPage = async ({
       {/* Brands Section */}
       <div className="bg-white pt-6 sm:pt-8">
         <h2
-          className={`text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8 text-left px-4 sm:px-6 md:px-8 lg:px-10 ${montserrat.className}`}
+          className={`text-center md:text-left text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 lg:px-10 ${montserrat.className}`}
         >
           Brands
         </h2>

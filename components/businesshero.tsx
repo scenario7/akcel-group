@@ -63,17 +63,17 @@ const CompanyHeader = ({
   subtitle: string;
 }) => {
   return (
-    <div className="absolute z-10 h-full w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 items-start justify-center text-black text-left">
+    <div className="absolute z-10 h-full w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 items-center md:items-start justify-center text-black text-left">
       <TypeAnimation
         sequence={[title, 1000]}
         wrapper="span"
         speed={50}
-        className={`${montserrat.className} text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold uppercase w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-3/4 leading-tight`}
+        className={`${montserrat.className} md:text-left text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold uppercase w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-3/4 leading-tight`}
         repeat={Infinity}
         cursor={false}
       />
       <p
-        className={`${openSans.className} text-black text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl text-left font-semibold w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 leading-relaxed`}
+        className={`${openSans.className} md:text-left text-center text-black text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl font-semibold w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 leading-relaxed`}
       >
         {subtitle}
       </p>

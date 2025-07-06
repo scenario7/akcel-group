@@ -49,7 +49,7 @@ const Businesses = () => {
               }}
             >
               {/* Red hover overlay */}
-              <div className="absolute inset-0 bg-black/70 group-hover:from-[#da291c] group-hover:to-[#000000] group-hover:via-[#000000] group-hover:bg-gradient-to-t opacity-90 transition-colors duration-300 z-20" />
+              <div className="absolute inset-0 bg-black/70 group-hover:from-[#da291c] group-hover:to-[#000000] group-hover:bg-gradient-to-t opacity-80 transition-colors duration-300 z-20" />
 
               {/* Content */}
               <div className="absolute flex flex-col justify-center h-full w-full z-30 p-5 text-white transition-all duration-300">
@@ -59,7 +59,7 @@ const Businesses = () => {
                   {company.title}
                 </h2>
                 <p
-                  className={`${openSans.className} hidden group-hover:block transition-all text-lg mb-4`}
+                  className={`${openSans.className} md:hidden group-hover:block transition-all md:text-lg mb-4`}
                 >
                   {company.description.split(" ").slice(0, 20).join(" ")}...
                 </p>
@@ -67,7 +67,7 @@ const Businesses = () => {
                 {/* Read More Button */}
                 <a
                   href={`businesses/${company.slug}`}
-                  className={`opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-[#da291c] font-semibold px-4 py-2 shadow w-fit`}
+                  className={`md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-[#da291c] md:text-md text-sm font-semibold px-4 py-2 shadow w-fit`}
                 >
                   Read More
                 </a>

@@ -61,16 +61,21 @@ const Page = () => {
           </div>
 
           {/* What We Do */}
-          <div className="w-full mt-24">
-            <h1
-              className={`${montserrat.className} text-4xl font-bold text-black mb-6`}
-            >
-              What We Do
-            </h1>
-            <p className={`${openSans.className} text-[18px] text-black mb-6`}>
-              We leverage deep-rooted expertise to build integrated ecosystems
-              across:
-            </p>
+          <div className="w-full mt-14">
+            <div className="flex md:flex-row flex-col md:items-center justify-start gap-10 md:gap-10 pb-10">
+              <h1
+                className={`${montserrat.className} text-4xl font-bold text-black text-left `}
+              >
+                What we do
+              </h1>
+              <div className="bg-gradient-to-r md:bg-gradient-to-b from-transparent via-[#da291c] to-transparent md:w-[2px] md:h-20 h-[2px] w-32"></div>
+              <p
+                className={`${openSans.className} text-lg text-black`}
+              >
+                We leverage deep-rooted expertise to build integrated ecosystems
+                across:
+              </p>
+            </div>
             <ul className="grid md:grid-cols-2 gap-6">
               {[
                 {
@@ -99,15 +104,21 @@ const Page = () => {
                 },
               ].map((item, index) => (
                 <li key={index} className="flex items-start space-x-3">
-                  <span className="text-[#da291c] text-xl font-bold mt-1">•</span>
+                  <span className="text-[#da291c] text-xl font-bold mt-1">
+                    •
+                  </span>
                   <div className="text-black">
-                    <p className={`${openSans.className} text-3xl tracking-tight font-semibold`}>
+                    <p
+                      className={`${openSans.className} text-3xl tracking-tight font-semibold`}
+                    >
                       <span className="text-[#da291c] font-black">
                         {item.title[0]}
                       </span>
                       {item.title.slice(1)}
                     </p>
-                    <p className={`${openSans.className} text-[16px] mt-1 text-gray-700`}>
+                    <p
+                      className={`${openSans.className} text-[16px] mt-1 text-gray-700`}
+                    >
                       {item.desc}
                     </p>
                   </div>

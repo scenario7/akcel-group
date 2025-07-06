@@ -28,7 +28,7 @@ const letters = [
     description:
       "Knowledge empowers us to innovate and make informed decisions.",
     image:
-      "https://images.unsplash.com/photo-1609619385076-36a873425636?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1529704193007-e8c78f0f46f9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     letter: "C",
@@ -52,7 +52,7 @@ const letters = [
     description:
       "Legacy inspires us to create lasting impact for future generations.",
     image:
-      "https://images.unsplash.com/photo-1581855339095-0c282d58527b?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 

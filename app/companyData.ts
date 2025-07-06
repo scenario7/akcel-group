@@ -30,6 +30,8 @@ import remax6 from "@/images/remax/6.jpg";
 import remax7 from "@/images/remax/7.jpg";
 import jetkingshow from '@/images/jetking1.png'
 import technology from '@/images/technology.png'
+import homes from '@/images/homes.png'
+import home from '@/images/home.jpg'
 
 export const akcelCompanies = [
   {
@@ -55,7 +57,7 @@ With a clear mission to nurture young racing talent and compete at the highest l
       gp9.src,
       gp10.src,
     ],
-    link: "https://akcelgp.com",
+    link: "https://akcelgp.com/",
   },
   {
     title: "AKCEL Entertainment & Media",
@@ -93,6 +95,25 @@ With a commitment to innovation, reliability, and excellence, Jetking Technologi
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // IT conference
     ],
     link: "https://jetking.com",
+  },
+    {
+    title: "AKCEL Homes",
+    slug: "akcel-homes",
+    description: `A premium real estate developer based in the UAE, dedicated to redefining modern living through luxury residential projects and exclusive holiday homes.
+
+AKCEL Realty is currently launching new residential developments as joint ventures, the company is set to introduce its own premium residential projects across the country, blending innovation, elegance, and high-end amenities.
+
+Expanding its vision beyond traditional real estate, AKCEL Realty is also bringing a unique concept to the market—Formula Racing-themed holiday homes, seamlessly combining luxury with a dynamic, sporty lifestyle.`,
+    logo: homes,
+    images: [
+      home.src,
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80", // luxury home
+      "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // real estate
+      "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // modern apartment
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // city skyline
+    ],
   },
   {
     title: "AKCEL Realty",

@@ -20,7 +20,7 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
 }) => {
   return (
     <div
-      className="relative flex flex-col items-center justify-center w-full h-[300px]"
+      className="relative flex flex-col items-center justify-center w-full py-10 md:py-24"
       style={{
       }}
     >

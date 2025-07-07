@@ -5,6 +5,7 @@ import NavBar from "@/components/navbar";
 import CustomFooter from "@/components/customfooter";
 import { Montserrat, Open_Sans } from "next/font/google";
 import CompanyHeader from "@/components/businesshero";
+import HeroTemplate from "@/components/herotemplate";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -69,18 +70,23 @@ const CompanyPage = async ({
   if (!company) return notFound();
 
   return (
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col bg-gradient-to-b from-black to-black/80">
       {/* Hero Section */}
-      <div className="flex flex-col h-[550px] md:h-screen w-screen">
-        <NavBar lightMode />
+      <div className="relative flex flex-col min-h-screen w-full">
+        <div className="absolute z-10 w-full">
+          <NavBar />
+        </div>
 
-        <div className="relative w-full h-full flex items-center justify-end">
-          <img
-            src={company.companies[0].images[1]}
-            alt=""
-            className="absolute z-0 w-auto h-3/5 sm:h-4/5 object-contain rounded-xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
+        <div className="absolute z-0 w-full h-full flex items-center md:justify-end">
+          <div className="relative w-full md:w-8/12 h-full">
+            <img
+              src={company.companies[0].images[1]}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black md:from-black via-black/80 to-transparent z-10 " />
+          </div>
+
           <CompanyHeader
             title={company.subtitle}
             subtitle={company.description}
@@ -89,12 +95,8 @@ const CompanyPage = async ({
       </div>
 
       {/* Brands Section */}
-      <div className="bg-white pt-6 sm:pt-8">
-        <h2
-          className={`text-center md:text-left text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 lg:px-10 ${montserrat.className}`}
-        >
-          Brands
-        </h2>
+      <div className="bg-white">
+        <HeroTemplate title="Brands" subtitle="" image="" />
 
         <div className="flex flex-col mx-auto">
           {company.companies.map((c, index) => (

@@ -21,6 +21,8 @@ import gp8 from "@/images/GP/8.jpg";
 import gp9 from "@/images/GP/9.jpg";
 import gp10 from "@/images/GP/10.jpg";
 import gp11 from "@/images/GP/11.jpg";
+import gp12 from "@/images/GP/12.jpg";
+import gp13 from "@/images/GP/13.jpg";
 import remax1 from "@/images/remax/1.jpg";
 import remax2 from "@/images/remax/2.jpg";
 import remax3 from "@/images/remax/3.jpg";
@@ -44,6 +46,8 @@ Competing in the Formula Regional European Championship by Alpine (FRECA), the F
 With a clear mission to nurture young racing talent and compete at the highest levels, the team embodies the AKCEL Group's vision of innovation, ambition, and performance at the forefront of global racing.`,
     logo: akcelGpLogo,
     images: [
+      gp12.src,
+      gp13.src,
       gp11.src,
 
       gp1.src,
@@ -160,11 +164,14 @@ With a clear vision and a bold approach, REMAX India remains committed to transf
   {
     title: "AKCEL GP Academy",
     slug: "akcel-gp-academy",
-    description: `AKCEL GP Academy is a premier training academy dedicated to developing top-tier talent in two of the UAE’s most promising sectors—IT services and real estate sales.
-
-With a strong commitment to professional excellence and skill development, the academy will offer specialized training programs designed to equip individuals with the expertise needed to excel in these dynamic industries.
-
-By combining cutting-edge education, industry insights, and hands-on experience, AKCEL Academy aims to empower professionals and drive innovation, growth, and success in the UAE’s thriving business landscape.`,
+    description: `AKCEL GP is a high-performance
+motorsport team with active operations across the UAE, UK, and Italy-reflecting the
+scale, ambition, and competitive reach of our program. As we make our debut on the
+international stage, we’re competing in the Formula Regional European
+Championship by Alpine (FRECA), the Formula Regional Middle East Championship
+(FRMEC), and the Formula 4 (F4) series. Backed by the UK-based AKCEL Group, our
+mission is clear: to nurture rising racing talent and challenge the very best in global
+motorsport. )`,
     logo: akcelAcademyLogo,
     images: [
       "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80", // classroom
@@ -230,7 +237,7 @@ export const akcelBusinesses = [
   },
   {
     title: "Technology",
-    subtitle: "",
+    subtitle: "LEGACY-POWERED. FUTURE-READY.",
     slug: "techonology",
     description:
       "Driving digital transformation and IT innovation across industries.",
@@ -242,10 +249,10 @@ export const akcelBusinesses = [
   },
   {
     title: "Real Estate",
-    subtitle: "Building Statements. Crafting Statements",
+    subtitle: "BUILT FOR THE WAY YOU LIVE NEXT.",
     slug: "real-estate",
     description:
-      "Our real estate vision is grounded in bold thinking and contemporary design. We don’t just develop properties we craft environments that elevate everyday living and redefine urban experiences. From iconic residences to cutting-edge commercial hubs, every project is a reflection of thoughtful design, long-term value, and lifestyle relevance. With a commitment to timeless aesthetics, functional innovation, and uncompromising quality, we create spaces that are as aspirational as they are enduring. Active across key global cities—including London and Dubai—our portfolio reflects a sharp understanding of evolving market needs and a deep belief in building for what’s next.",
+      "We don’t just develop buildings—we shape how people live. Every project blends timeless design, functional innovation, and lifestyle relevance to create spaces that inspire better living. From iconic residences to next-gen commercial hubs, our developments reflect a deep understanding of evolving needs. With a presence in cities like London and Dubai, we build with purpose, impact, and an eye on what’s next.",
     image:
       realty.src,
     companies: akcelCompanies.filter((c) =>
@@ -257,7 +264,7 @@ export const akcelBusinesses = [
     subtitle: "From Soundwaves to Spotlights—We Create What Connects.",
     slug: "entertainment",
     description:
-      "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it's a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
+      "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it&#39;s a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
     companies: akcelCompanies.filter((c) =>
@@ -278,7 +285,7 @@ export const akcelBusinesses = [
   },
   {
     title: "Investment",
-    subtitle: "Backing Ideas That Shape Tomorrow.",
+    subtitle: "BACKING IDEAS THAT SHAPE TOMORROW.",
     slug: "investment",
     description:
       "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",

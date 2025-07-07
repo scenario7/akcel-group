@@ -36,12 +36,15 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
       maxCursorMove={120}
       xGap={12}
       yGap={36}
-      className="absolute inset-0 bg-gradient-to-b from-[#e33439] to-transparent"
+      className="absolute inset-0 bg-gradient-to-b from-[#da291c] to-black"
       />
       <h1
-      className={`${montserrat.className} font-bold text-white text-3xl md:text-6xl uppercase text-center relative z-10 px-10`}
+        className={`${montserrat.className} font-bold text-white text-3xl md:text-6xl uppercase text-center relative z-10 px-10`}
+        style={{
+          textShadow: "0 2px 50px rgba(0,0,0,0.55)",
+        }}
       >
-      {title}
+        {title}
       </h1>
       {subtitle && (
       <p className="text-white tracking-tight font-semibold text-center text-3xl mt-5 relative z-10" >{subtitle}</p>

@@ -26,7 +26,7 @@ const ScrollChevrons = () => {
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           data-slot="icon"
-          className="w-8 h-8 sm:w-10 sm:h-10 text-[#000000]"
+          className="w-6 h-6 text-[#000000]"
           style={{
             animation: "chevronFade 2s infinite",
             animationDelay: `${i * 0.33}s`,
@@ -68,12 +68,12 @@ const CompanyHeader = ({
         sequence={[title, 1000]}
         wrapper="span"
         speed={50}
-        className={`${montserrat.className} md:text-left text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold uppercase w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-3/4 leading-tight`}
+        className={`${montserrat.className} md:text-left text-center text-2xl md:text-7xl font-bold uppercase w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-3/4 leading-tight`}
         repeat={Infinity}
         cursor={false}
       />
       <p
-        className={`${openSans.className} md:text-left text-center text-black text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl font-semibold w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 leading-relaxed`}
+        className={`${openSans.className} md:text-left text-center text-black md:text-xl font-semibold w-full md:w-3/4 leading-relaxed`}
       >
         {subtitle}
       </p>

@@ -113,7 +113,7 @@ const CompanyPage = async ({
                   className="h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-40 lg:h-32 lg:w-44 xl:h-36 xl:w-48 object-contain"
                 />
                 <p
-                  className={`${openSans.className} text-black text-sm sm:text-base md:text-lg tracking-tight text-center lg:text-left leading-relaxed`}
+                  className={`${openSans.className} text-black text-sm sm:text-base md:text-lg tracking-tight text-justify lg:text-justify leading-relaxed`}
                 >
                   {c.description}
                 </p>

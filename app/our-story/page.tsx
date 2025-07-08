@@ -70,7 +70,7 @@ const Page = () => {
               </h1>
               <div className="bg-gradient-to-r md:bg-gradient-to-b from-transparent via-[#da291c] to-transparent md:w-[2px] md:h-20 h-[2px] w-32"></div>
               <p
-                className={`${openSans.className} text-lg text-black`}
+                className={`${openSans.className} text-xl text-black`}
               >
                 We leverage deep-rooted expertise to build integrated ecosystems
                 across:

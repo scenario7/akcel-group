@@ -34,6 +34,8 @@ import jetkingshow from '@/images/jetking1.png'
 import technology from '@/images/technology.png'
 import homes from '@/images/homes.png'
 import home from '@/images/home.jpg'
+import vr from '@/images/vr.jpg'
+import gaming from '@/images/gaming.jpg'
 
 export const akcelCompanies = [
   {
@@ -73,8 +75,8 @@ Committed to innovation, the company is also expanding into the thriving world o
 With a mission to empower voices, build communities, and shape the future of entertainment, AKCEL Entertainment & Media continues to redefine industry standards and deliver impactful experiences.`,
     logo: akcelMediaLogo,
     images: [
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80", // media production
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", // podcast studio
+      gaming.src,
+      vr.src, // podcast studio
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80", // gaming
       "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80", // video editing
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // concert
@@ -266,7 +268,7 @@ export const akcelBusinesses = [
     description:
       "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it&#39;s a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      vr.src,
     companies: akcelCompanies.filter((c) =>
       ["akcel-entertainment-media"].includes(c.slug)
     ),

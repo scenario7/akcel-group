@@ -20,7 +20,7 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
 }) => {
   return (
     <div
-      className="relative flex flex-col items-center justify-center w-full py-10 md:py-24"
+      className="relative flex flex-col items-center justify-center w-full py-10 md:py-18"
       style={{
       }}
     >
@@ -39,7 +39,7 @@ const HeroTemplate: React.FC<HeroTemplateProps> = ({
       className="absolute inset-0 bg-gradient-to-b from-[#da291c] to-black"
       />
       <h1
-        className={`${montserrat.className} font-bold text-white text-3xl md:text-6xl uppercase text-center relative z-10 px-10`}
+        className={`${montserrat.className} font-bold text-white text-3xl md:text-4xl uppercase text-center relative z-10 px-10`}
         style={{
           textShadow: "0 2px 50px rgba(0,0,0,0.55)",
         }}

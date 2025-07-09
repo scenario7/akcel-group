@@ -72,11 +72,8 @@ const CompanyPage = async ({
   return (
     <div className="flex flex-col bg-gradient-to-b from-black to-black/80">
       {/* Hero Section */}
+      <NavBar />
       <div className="relative flex flex-col min-h-screen w-full">
-        <div className="absolute z-10 w-full">
-          <NavBar />
-        </div>
-
         <div className="absolute z-0 w-full h-full flex items-center md:justify-end">
           <div className="relative w-full md:w-8/12 h-full">
             <img
@@ -103,10 +100,10 @@ const CompanyPage = async ({
             <div
               className={`flex flex-col lg:flex-row ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              } items-center gap-6 lg:gap-0 py-8 lg:py-12`}
+              } items-center gap-6 lg:gap-0`}
               key={index}
             >
-              <div className="w-full lg:w-1/2 flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 gap-6 lg:gap-10">
+              <div className="w-full lg:w-1/2 flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 gap-6 lg:gap-10 py-5">
                 <img
                   src={c.logo.src}
                   alt=""
@@ -140,7 +137,7 @@ const CompanyPage = async ({
                 </a>
               </div>
 
-              <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-10">
+              <div className="w-full lg:w-1/2 ">
                 <img
                   src={c.images[0]}
                   alt=""

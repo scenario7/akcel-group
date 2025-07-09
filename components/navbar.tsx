@@ -86,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
                   Businesses
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white text-center`}>
+                  <div className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white text-left`}>
                     {akcelBusinesses.map((company, index) => (
                       <NavigationMenuLink key={index} asChild>
                         <Link href={`/businesses/${company.slug}`}>
@@ -104,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
                   About Us
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-center`}>
+                  <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-left`}>
                     <NavigationMenuLink asChild>
                       <Link href="/our-story">Our Story</Link>
                     </NavigationMenuLink>
@@ -124,7 +124,7 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
                   Media
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-center`}>
+                  <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-left`}>
                     <NavigationMenuLink asChild>
                       <Link href="#">Press Releases</Link>
                     </NavigationMenuLink>

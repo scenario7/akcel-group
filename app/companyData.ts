@@ -23,7 +23,7 @@ import gp10 from "@/images/GP/10.jpg";
 import gp11 from "@/images/GP/11.jpg";
 import gp12 from "@/images/GP/12.jpg";
 import gp13 from "@/images/GP/13.jpg";
-import remax1 from "@/images/remax/1.jpg";
+// import remax1 from "@/images/remax/1.jpg";
 import remax2 from "@/images/remax/2.jpg";
 import remax3 from "@/images/remax/3.jpg";
 import remax4 from "@/images/remax/4.jpg";
@@ -36,16 +36,13 @@ import homes from '@/images/homes.png'
 import home from '@/images/home.jpg'
 import vr from '@/images/vr.jpg'
 import gaming from '@/images/gaming.jpg'
+import real2 from '@/images/real2.jpg'
 
 export const akcelCompanies = [
   {
     title: "AKCEL GP",
     slug: "akcel-gp",
-    description: `Backed by the AKCEL Group, AKCEL GP is a UAE-based motorsport team making its mark on the international racing stage.
-
-Competing in the Formula Regional European Championship by Alpine (FRECA), the Formula Regional Middle East Championship (FRMEC), and the Formula 4 (F4) series, AKCEL GP is committed to excellence in motorsport.
-
-With a clear mission to nurture young racing talent and compete at the highest levels, the team embodies the AKCEL Group's vision of innovation, ambition, and performance at the forefront of global racing.`,
+    description: `AKCEL GP is a high-performance motorsport team with active operations across the UAE, UK, and Italy-reflecting the scale, ambition, and competitive reach of our program. As we make our debut on the international stage, we’re competing in the Formula Regional European Championship by Alpine (FRECA), the Formula Regional Middle East Championship (FRMEC), and the Formula 4 (F4) series. Backed by the UK-based AKCEL Group, our mission is clear: to nurture rising racing talent and challenge the very best in global motorsport.`,
     logo: akcelGpLogo,
     images: [
       gp12.src,
@@ -82,15 +79,15 @@ With a mission to empower voices, build communities, and shape the future of ent
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // concert
       "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80", // DJ
     ],
-  },
-  {
+    },
+
+    {
     title: "Jetking Technologies",
     slug: "jetking-technologies",
-    description: `With a legacy spanning over six decades, JetKing Technologies is a leading provider of cutting-edge IT solutions tailored to businesses across all industries.
+    description: `With a legacy spanning over six decades, JetKing Technologies is a leading provider of cutting-edge IT solutions tailored to businesses across all industries. Specializing in IT infrastructure services, the company delivers comprehensive and customized solutions that meet the evolving needs of its clients. With a commitment to innovation, reliability, and excellence, Jetking Technologies continues to empower businesses with the technology and expertise required to thrive in a rapidly changing digital landscape.
 
-Specializing in IT infrastructure services, the company delivers comprehensive and customized solutions that meet the evolving needs of its clients.
-
-With a commitment to innovation, reliability, and excellence, Jetking Technologies continues to empower businesses with the technology and expertise required to thrive in a rapidly changing digital landscape.`,
+  Our global experience, combined with a relentless focus on emerging technologies, allows us to stay ahead of the curve—ensuring our clients do the same. Integrity, transparency, and collaboration define our approach, as we strive to build enduring partnerships grounded in trust and measurable outcomes.
+  Let us be the driving force behind your digital transformation.`,
     logo: jetkingLogo,
     images: [
       jetkingshow.src, // IT team
@@ -113,8 +110,8 @@ Expanding its vision beyond traditional real estate, AKCEL Realty is also bringi
     logo: homes,
     images: [
       home.src,
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80", // luxury home
-      "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // real estate
+      real2.src, // luxury home
+      real2.src, // real estate
       "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // modern apartment
@@ -153,7 +150,7 @@ With a clear vision and a bold approach, REMAX India remains committed to transf
     logo: remaxLogo,
     images: [
       remaxDisplay.src, // real estate agent
-      remax1.src,
+      real2.src,
       remax2.src,
       remax3.src,
       remax4.src,
@@ -242,7 +239,7 @@ export const akcelBusinesses = [
     subtitle: "LEGACY-POWERED. FUTURE-READY.",
     slug: "techonology",
     description:
-      "Driving digital transformation and IT innovation across industries.",
+      "With over six decades of expertise, we blend time-tested reliability with forward-looking innovation to drive digital transformation across industries. Our tailored IT infrastructure solutions empower businesses to evolve, adapt, and lead in an ever-changing technological landscape.",
     image:
       technology.src,
     companies: akcelCompanies.filter((c) =>

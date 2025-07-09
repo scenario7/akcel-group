@@ -226,7 +226,7 @@ scenario of Rs. 1100 Cr. In last 10 years.`,
 export const akcelBusinesses = [
   {
     title: "Motorsports",
-    subtitle: "Accelerating Excellence",
+    subtitle: "Accelerating Excellence.",
     slug: "motorsports",
     description:
       "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
@@ -236,7 +236,7 @@ export const akcelBusinesses = [
   },
   {
     title: "Technology",
-    subtitle: "LEGACY-POWERED. FUTURE-READY.",
+    subtitle: "LEGACY-POWERED. \nFUTURE-READY.",
     slug: "techonology",
     description:
       "With over six decades of expertise, we blend time-tested reliability with forward-looking innovation to drive digital transformation across industries. Our tailored IT infrastructure solutions empower businesses to evolve, adapt, and lead in an ever-changing technological landscape.",

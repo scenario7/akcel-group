@@ -75,8 +75,8 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:block">
-          <NavigationMenu>
+        <div className="hidden md:block z-20">
+          <NavigationMenu viewport={false}>
             <NavigationMenuList
               className={`space-x-4 ${openSans.className} ${textColor} font-semibold tracking-tight`}
             >

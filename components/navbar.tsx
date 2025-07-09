@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import redLogo from "@/images/redLogo.png";
@@ -11,6 +11,13 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
+
+import {
+  Drawer,
+  DrawerTrigger,
+  DrawerContent,
+} from "@/components/ui/drawer";
+
 import { akcelBusinesses } from "@/app/companyData";
 import Link from "next/link";
 
@@ -82,11 +89,15 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
             >
               {/* Businesses */}
               <NavigationMenuItem>
-                <NavigationMenuTrigger className={`${openSans.className} bg-transparent ${textColor}`}>
+                <NavigationMenuTrigger
+                  className={`${openSans.className} bg-transparent ${textColor}`}
+                >
                   Businesses
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white text-left`}>
+                  <div
+                    className={`flex flex-col rounded min-w-[220px] ${openSans.className} text-white text-left`}
+                  >
                     {akcelBusinesses.map((company, index) => (
                       <NavigationMenuLink key={index} asChild>
                         <Link href={`/businesses/${company.slug}`}>
@@ -100,11 +111,15 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
 
               {/* About Us */}
               <NavigationMenuItem>
-                <NavigationMenuTrigger className={`${openSans.className} bg-transparent ${textColor}`}>
+                <NavigationMenuTrigger
+                  className={`${openSans.className} bg-transparent ${textColor}`}
+                >
                   About Us
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-left`}>
+                  <div
+                    className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-left`}
+                  >
                     <NavigationMenuLink asChild>
                       <Link href="/our-story">Our Story</Link>
                     </NavigationMenuLink>
@@ -120,11 +135,15 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
 
               {/* Media */}
               <NavigationMenuItem>
-                <NavigationMenuTrigger className={`${openSans.className} bg-transparent ${textColor}`}>
+                <NavigationMenuTrigger
+                  className={`${openSans.className} bg-transparent ${textColor}`}
+                >
                   Media
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-left`}>
+                  <div
+                    className={`flex flex-col rounded min-w-[180px] ${openSans.className} text-white text-left`}
+                  >
                     <NavigationMenuLink asChild>
                       <Link href="#">Press Releases</Link>
                     </NavigationMenuLink>
@@ -205,25 +224,126 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
         </div>
 
         {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className={`md:hidden ${textColor} p-2 rounded-md hover:bg-gray-100 hover:bg-opacity-10 transition-colors`}
-          aria-label="Toggle menu"
-          aria-expanded={isMenuOpen}
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+        {/* Mobile Hamburger Button */}
+        <Drawer>
+          <DrawerTrigger asChild>
+            <button
+              className={`md:hidden ${textColor} p-2 rounded-md hover:bg-gray-100 hover:bg-opacity-10 transition-colors`}
+              aria-label="Toggle menu"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </DrawerTrigger>
+
+          <DrawerContent className="h-full w-4/5 ml-auto bg-black p-6 z-50">
+            <div className="space-y-5 mobile-menu-container text-white ">
+              {/* Businesses Dropdown */}
+              <div>
+                <button
+                  onClick={() => toggleDropdown("businesses")}
+                  className="w-full text-left font-semibold"
+                >
+                  Businesses
+                </button>
+                {openDropdown === "businesses" && (
+                  <div className="ml-4 space-y-2 mt-2">
+                    {akcelBusinesses.map((company, index) => (
+                      <Link
+                        key={index}
+                        href={`/businesses/${company.slug}`}
+                        className="block text-sm hover:underline"
+                      >
+                        {company.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* About Us Dropdown */}
+              <div>
+                <button
+                  onClick={() => toggleDropdown("about")}
+                  className="w-full text-left font-semibold"
+                >
+                  About Us
+                </button>
+                {openDropdown === "about" && (
+                  <div className="ml-4 space-y-2 mt-2">
+                    <Link
+                      href="/our-story"
+                      className="block text-sm hover:underline"
+                    >
+                      Our Story
+                    </Link>
+                    <Link
+                      href="/leadership"
+                      className="block text-sm hover:underline"
+                    >
+                      Leadership
+                    </Link>
+                    <Link
+                      href="/our-vision"
+                      className="block text-sm hover:underline"
+                    >
+                      Our Vision
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Media Dropdown */}
+              <div>
+                <button
+                  onClick={() => toggleDropdown("media")}
+                  className="w-full text-left font-semibold"
+                >
+                  Media
+                </button>
+                {openDropdown === "media" && (
+                  <div className="ml-4 space-y-2 mt-2">
+                    <Link href="#" className="block text-sm hover:underline">
+                      Press Releases
+                    </Link>
+                    <Link href="#" className="block text-sm hover:underline">
+                      In the News
+                    </Link>
+                    <Link href="#" className="block text-sm hover:underline">
+                      Events
+                    </Link>
+                    <Link href="#" className="block text-sm hover:underline">
+                      Podcasts
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Contact */}
+              <Link href="/contact" className="block py-2 font-semibold">
+                Contact Us
+              </Link>
+            </div>
+          </DrawerContent>
+        </Drawer>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className={`md:hidden ${bgColor} border-t border-gray-200 border-opacity-20 mobile-menu-container`}>
+        <div
+          className={`md:hidden ${bgColor} mobile-menu-container`}
+        >
           <div className="px-4 py-3 space-y-3 text-sm font-medium">
             {/* Businesses */}
             <div>
@@ -258,13 +378,22 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
               </button>
               {openDropdown === "about" && (
                 <div className="ml-4 space-y-2">
-                  <Link href="/our-story" className="block text-sm hover:underline">
+                  <Link
+                    href="/our-story"
+                    className="block text-sm hover:underline"
+                  >
                     Our Story
                   </Link>
-                  <Link href="/leadership" className="block text-sm hover:underline">
+                  <Link
+                    href="/leadership"
+                    className="block text-sm hover:underline"
+                  >
                     Leadership
                   </Link>
-                  <Link href="/our-vision" className="block text-sm hover:underline">
+                  <Link
+                    href="/our-vision"
+                    className="block text-sm hover:underline"
+                  >
                     Our Vision
                   </Link>
                 </div>
@@ -298,7 +427,10 @@ const Navbar: React.FC<NavbarProps> = ({ lightMode = false }) => {
             </div>
 
             {/* Contact */}
-            <Link href="/contact" className={`${textColor} block py-2 font-semibold`}>
+            <Link
+              href="/contact"
+              className={`${textColor} block py-2 font-semibold`}
+            >
               Contact Us
             </Link>
           </div>

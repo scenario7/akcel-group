@@ -31,7 +31,7 @@ import remax5 from "@/images/remax/5.jpg";
 import remax6 from "@/images/remax/6.jpg";
 import remax7 from "@/images/remax/7.jpg";
 import jetkingshow from '@/images/jetking1.png'
-import technology from '@/images/technology.png'
+// import technology from '@/images/technology.png'
 import homes from '@/images/homes.png'
 import home from '@/images/home.jpg'
 import vr from '@/images/vr.jpg'
@@ -91,7 +91,7 @@ With a mission to empower voices, build communities, and shape the future of ent
     logo: jetkingLogo,
     images: [
       jetkingshow.src, // IT team
-      technology.src, // server room
+      'https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&q=80", // coding
       "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", // tech workspace
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80", // developer

@@ -241,7 +241,7 @@ export const akcelBusinesses = [
     description:
       "With over six decades of expertise, we blend time-tested reliability with forward-looking innovation to drive digital transformation across industries. Our tailored IT infrastructure solutions empower businesses to evolve, adapt, and lead in an ever-changing technological landscape.",
     image:
-      technology.src,
+      'https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     companies: akcelCompanies.filter((c) =>
       ["jetking-technologies"].includes(c.slug)
     ),
@@ -263,7 +263,7 @@ export const akcelBusinesses = [
     subtitle: "From Soundwaves to Spotlights—We Create What Connects.",
     slug: "entertainment",
     description:
-      "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it&#39;s a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
+      "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it's a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
     image:
       vr.src,
     companies: akcelCompanies.filter((c) =>

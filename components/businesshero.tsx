@@ -68,7 +68,7 @@ const CompanyHeader = ({
         sequence={[title, 1000]}
         wrapper="span"
         speed={50}
-        className={`${montserrat.className} md:text-left text-center text-2xl md:text-6xl font-bold uppercase w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-3/4 leading-tight`}
+        className={`${montserrat.className} md:text-left text-center text-2xl md:text-5xl font-bold uppercase w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-3/4 leading-tight`}
         repeat={Infinity}
         cursor={false}
       />

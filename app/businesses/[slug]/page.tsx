@@ -35,8 +35,8 @@ const CompanyPage = async ({
 
   if (comingSoonSlugs.includes(slug)) {
     return (
-      <div className="flex flex-col bg-white min-h-screen text-black text-center">
-        <NavBar lightMode />
+      <div className="flex flex-col bg-black min-h-screen text-white text-center">
+        <NavBar />
         <div className="mt-20 flex flex-col h-full gap-10 items-center justify-center px-10 py-10">
           <h1
             className={`text-4xl sm:text-5xl font-bold mb-4 ${montserrat.className}`}

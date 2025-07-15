@@ -44,9 +44,9 @@ const Locations = () => {
       >
         Our Locations
       </h1>
-        <div className="flex justify-between p-10">
+        <div className="flex md:flex-row flex-col gap-5 justify-between p-10">
             {officeLocations.map((location, index) =>(
-                <div key={index} className="flex flex-col w-1/5 px-5 gap-3 items-center">
+                <div key={index} className="flex flex-col md:w-1/5 px-5 gap-3 items-center">
                     <img src={location.flag} className="h-10"></img>
                     <h3 className={`${montserrat.className} font-semibold text-black`}>{location.country}</h3>
                     <p className={`${openSans.className} text-stone-700 text-center tracking-tight`}>{location.address}</p>

@@ -132,7 +132,7 @@ const NewMediaSection = () => {
             <div className="mt-4 sm:mt-6 gap-2 sm:gap-4 md:gap-6 lg:gap-10 flex flex-col sm:flex-row">
               <a
                 href="/podcasts"
-                className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors text-sm sm:text-base`}
+                className={`${openSans.className} w-full inline-flex items-center justify-center px-2 py-3 gap-1 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors text-sm sm:text-base`}
               >
                 Podcasts
                 <svg
@@ -153,7 +153,7 @@ const NewMediaSection = () => {
 
               <a
                 href="/press-releases"
-                className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors text-sm sm:text-base`}
+                className={`${openSans.className} w-full inline-flex items-center justify-center px-2 py-3 gap-1 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors text-sm sm:text-base`}
               >
                 Press Releases
                 <svg
@@ -174,7 +174,7 @@ const NewMediaSection = () => {
 
               <a
                 href="/events"
-                className={`${openSans.className} w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors text-sm sm:text-base`}
+                className={`${openSans.className} w-full inline-flex items-center justify-center px-2 py-3 gap-1 bg-[#da291c] text-white font-medium hover:bg-gray-900 transition-colors text-sm sm:text-base`}
               >
                 Events
                 <svg

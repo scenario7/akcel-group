@@ -103,47 +103,47 @@ const CompanyPage = async ({
               } items-center gap-6 lg:gap-0`}
               key={index}
             >
-              <div className="w-full lg:w-1/2 flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 gap-6 lg:gap-10 py-5">
+              <div className="w-full lg:w-1/2 flex flex-col gap-5 items-center">
                 <img
                   src={c.logo.src}
                   alt=""
-                  className="h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-40 lg:h-32 lg:w-44 xl:h-36 xl:w-48 object-contain"
+                  className="h-20 w-32 md:h-24 md:w-36 object-contain"
                 />
                 <p
-                  className={`${openSans.className} text-black text-sm sm:text-base md:text-lg tracking-tight text-justify lg:text-justify leading-relaxed`}
+                  className={`${openSans.className} text-black text-sm md:text-[16px] tracking-tight text-justify lg:text-justify leading-relaxed px-14`}
                 >
                   {c.description}
                 </p>
-                <a
-                  href={c.link}
-                  target="_blank"
-                  className={`${openSans.className} w-full max-w-xs lg:max-w-none inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-[#da291c] text-white text-sm sm:text-base font-medium hover:bg-gray-900 transition-colors rounded-md lg:rounded-none`}
-                >
-                  Visit Website
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
+                {c.link && (
+                  <a
+                    href={c.link}
+                    target="_blank"
+                    className={`${openSans.className} max-w-xs lg:max-w-none inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-[#da291c] text-white text-sm sm:text-base font-medium hover:bg-gray-900 transition-colors rounded-md lg:rounded-none`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
+                    Visit Website
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </a>
+                )}
               </div>
 
-              <div className="w-full lg:w-1/2 ">
                 <img
                   src={c.images[0]}
                   alt=""
-                  className="w-full h-auto object-contain rounded-lg lg:rounded-none"
+                  className="h-full md:w-1/2 object-cover rounded-lg lg:rounded-none"
                 />
-              </div>
             </div>
           ))}
         </div>

@@ -1,4 +1,4 @@
-import radius from '@/images/radius.png'
+import radius from "@/images/radius.png";
 import akcelGpLogo from "@/images/gp.png";
 import akcelMediaLogo from "@/images/entertainment.png";
 import jetkingLogo from "@/images/jetking.png";
@@ -6,10 +6,10 @@ import akcelRealtyLogo from "@/images/realty.png";
 import remaxLogo from "@/images/remax.png";
 import akcelInvestmentsLogo from "@/images/investments.png";
 import akcelAcademyLogo from "@/images/academy.png";
-import mining from '@/images/mining.jpg'
+import mining from "@/images/mining.jpg";
 import remaxDisplay from "@/images/remaxDisplay.png";
-import investment from '@/images/investmentBanner.jpg'
-import realty from '@/images/realEstate.jpg'
+import investment from "@/images/investmentBanner.jpg";
+import realty from "@/images/realEstate.jpg";
 import gp1 from "@/images/GP/1.jpg";
 import gp2 from "@/images/GP/2.jpg";
 import gp3 from "@/images/GP/3.jpg";
@@ -30,13 +30,13 @@ import remax4 from "@/images/remax/4.jpg";
 import remax5 from "@/images/remax/5.jpg";
 import remax6 from "@/images/remax/6.jpg";
 import remax7 from "@/images/remax/7.jpg";
-import jetkingshow from '@/images/jetking1.png'
+import jetkingshow from "@/images/jetking1.png";
 // import technology from '@/images/technology.png'
-import homes from '@/images/homes.png'
-import home from '@/images/home.jpg'
-import vr from '@/images/vr.jpg'
-import gaming from '@/images/gaming.jpg'
-import real2 from '@/images/real2.jpg'
+import homes from "@/images/homes.png";
+import home from "@/images/home.jpg";
+import vr from "@/images/vr.jpg";
+import gaming from "@/images/gaming.jpg";
+import real2 from "@/images/real2.jpg";
 
 export const akcelCompanies = [
   {
@@ -79,9 +79,9 @@ With a mission to empower voices, build communities, and shape the future of ent
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // concert
       "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80", // DJ
     ],
-    },
+  },
 
-    {
+  {
     title: "Jetking Technologies",
     slug: "jetking-technologies",
     description: `With a legacy spanning over six decades, JetKing Technologies is a leading provider of cutting-edge IT solutions tailored to businesses across all industries. Specializing in IT infrastructure services, the company delivers comprehensive and customized solutions that meet the evolving needs of its clients. With a commitment to innovation, reliability, and excellence, Jetking Technologies continues to empower businesses with the technology and expertise required to thrive in a rapidly changing digital landscape.
@@ -91,32 +91,13 @@ With a mission to empower voices, build communities, and shape the future of ent
     logo: jetkingLogo,
     images: [
       jetkingshow.src, // IT team
-      'https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      "https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&q=80", // coding
       "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", // tech workspace
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80", // developer
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // IT conference
     ],
     link: "https://jetking.com",
-  },
-    {
-    title: "AKCEL Homes",
-    slug: "akcel-homes",
-    description: `A premium real estate developer based in the UAE, dedicated to redefining modern living through luxury residential projects and exclusive holiday homes.
-
-AKCEL Realty is currently launching new residential developments as joint ventures, the company is set to introduce its own premium residential projects across the country, blending innovation, elegance, and high-end amenities.
-
-Expanding its vision beyond traditional real estate, AKCEL Realty is also bringing a unique concept to the market—Formula Racing-themed holiday homes, seamlessly combining luxury with a dynamic, sporty lifestyle.`,
-    logo: homes,
-    images: [
-      home.src,
-      real2.src, // luxury home
-      real2.src, // real estate
-      "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
-      "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // modern apartment
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // city skyline
-    ],
   },
   {
     title: "AKCEL Realty",
@@ -131,6 +112,25 @@ Expanding its vision beyond traditional real estate, AKCEL Realty is also bringi
       realty.src,
       "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80", // luxury home
       "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // real estate
+      "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // modern apartment
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // city skyline
+    ],
+  },
+  {
+    title: "AKCEL Homes",
+    slug: "akcel-homes",
+    description: `A premium real estate developer based in the UAE, dedicated to redefining modern living through luxury residential projects and exclusive holiday homes.
+
+AKCEL Realty is currently launching new residential developments as joint ventures, the company is set to introduce its own premium residential projects across the country, blending innovation, elegance, and high-end amenities.
+
+Expanding its vision beyond traditional real estate, AKCEL Realty is also bringing a unique concept to the market—Formula Racing-themed holiday homes, seamlessly combining luxury with a dynamic, sporty lifestyle.`,
+    logo: homes,
+    images: [
+      home.src,
+      real2.src, // luxury home
+      real2.src, // real estate
       "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=800&q=80", // real estate agent
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80", // office
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // modern apartment
@@ -230,8 +230,7 @@ export const akcelBusinesses = [
     slug: "motorsports",
     description:
       "We don’t just race—we build legacy. Our Formula Racing Team competes at the highest level in Formula Regional and F4 championships across the Middle East and Europe. With a fierce focus on performance, talent development, and global ambition, we are engineering a future where passion meets podiums.",
-    image:
-      gp11.src,
+    image: gp11.src,
     companies: akcelCompanies.filter((c) => ["akcel-gp"].includes(c.slug)),
   },
   {
@@ -241,7 +240,7 @@ export const akcelBusinesses = [
     description:
       "With over six decades of expertise, we blend time-tested reliability with forward-looking innovation to drive digital transformation across industries. Our tailored IT infrastructure solutions empower businesses to evolve, adapt, and lead in an ever-changing technological landscape.",
     image:
-      'https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      "https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     companies: akcelCompanies.filter((c) =>
       ["jetking-technologies"].includes(c.slug)
     ),
@@ -252,10 +251,9 @@ export const akcelBusinesses = [
     slug: "real-estate",
     description:
       "We don’t just develop buildings—we shape how people live. Every project blends timeless design, functional innovation, and lifestyle relevance to create spaces that inspire better living. From iconic residences to next-gen commercial hubs, our developments reflect a deep understanding of evolving needs. With a presence in cities like London and Dubai, we build with purpose, impact, and an eye on what’s next.",
-    image:
-      realty.src,
+    image: realty.src,
     companies: akcelCompanies.filter((c) =>
-      ["akcel-realty", "remax-india", "akcel-homes"].includes(c.slug)
+      ["akcel-realty", "akcel-homes", "remax-india"].includes(c.slug)
     ),
   },
   {
@@ -264,8 +262,7 @@ export const akcelBusinesses = [
     slug: "entertainment",
     description:
       "We create more than content—we shape culture. From compelling narratives to boundary-pushing digital media, our work spans film, entertainment, and immersive storytelling. Whether it's a bold campaign or a quiet moment that lingers, we craft experiences that move minds and spark moments of magic.",
-    image:
-      vr.src,
+    image: vr.src,
     companies: akcelCompanies.filter((c) =>
       ["akcel-entertainment-media"].includes(c.slug)
     ),
@@ -276,11 +273,8 @@ export const akcelBusinesses = [
     slug: "mining",
     description:
       "As a core sector of Akcel Group, Akcel Mining is committed to responsible resource extraction that fuels industries and empowers economies. With a focus on innovation, safety, and sustainability, we harness the earth’s potential while preserving its future. From exploration to production, Akcel Mining delivers precision, performance, and long-term value.",
-    image:
-      mining.src,
-    companies: akcelCompanies.filter((c) =>
-      ["radius"].includes(c.slug)
-    ),
+    image: mining.src,
+    companies: akcelCompanies.filter((c) => ["radius"].includes(c.slug)),
   },
   {
     title: "Investment",
@@ -288,13 +282,12 @@ export const akcelBusinesses = [
     slug: "investment",
     description:
       "We invest with curiosity, conviction, and a clear view of what’s next. From emerging startups to transformative ventures, we empower bold thinkers across sectors. For us, it’s not just about capital—it’s about catalyzing impact, fueling innovation, and creating stories of growth that matter.",
-    image:
-      investment.src,
+    image: investment.src,
     companies: akcelCompanies.filter((c) =>
       ["akcel-investments"].includes(c.slug)
     ),
   },
-    {
+  {
     title: "Education",
     subtitle: "",
     slug: "education",

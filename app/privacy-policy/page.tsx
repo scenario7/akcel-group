@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
       <NavBar />
       <HeroTemplate
         image="https://images.unsplash.com/photo-1581092334652-e1f9d4c16111?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0"
-        title="Privacy Policy"
+        title="Privacy Policy for AKCEL Group"
         subtitle=""
       />
 

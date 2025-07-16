@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Montserrat, Open_Sans } from "next/font/google";
-import { FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPaperPlane } from "react-icons/fa";
 import Navbar from "@/components/navbar";
 import Locations from "@/components/locations";
 import CustomFooter from "@/components/customfooter";
@@ -97,9 +97,9 @@ const ContactPage = () => {
                       <h3 className={`${montserrat.className} font-semibold text-lg text-gray-900 mb-2`}>
                         Email Address
                       </h3>
-                      <p className={`${openSans.className} text-gray-600`}>
-                        contact@akcelgroup.com
-                      </p>
+                      <a href="mailto:info@akcelgroup.com" className={`${openSans.className} text-gray-600`}>
+                        info@akcelgroup.com
+                      </a>
                       <p className={`${openSans.className} text-sm text-gray-500 mt-1`}>
                         We&apos;ll respond within 24 hours
                       </p>
@@ -107,43 +107,8 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="group">
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
-                    <div className="flex-shrink-0">
-                      <FaMapMarkerAlt className="text-[#da291c] text-xl mt-1" />
-                    </div>
-                    <div>
-                      <h3 className={`${montserrat.className} font-semibold text-lg text-gray-900 mb-2`}>
-                        Office Location
-                      </h3>
-                      <p className={`${openSans.className} text-gray-600`}>
-                        London, United Kingdom
-                      </p>
-                      <p className={`${openSans.className} text-sm text-gray-500 mt-1`}>
-                        Multiple locations available
-                      </p>
-                    </div>
-                  </div>
-                </div>
 
-                <div className="group">
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
-                    <div className="flex-shrink-0">
-                      <FaClock className="text-[#da291c] text-xl mt-1" />
-                    </div>
-                    <div>
-                      <h3 className={`${montserrat.className} font-semibold text-lg text-gray-900 mb-2`}>
-                        Response Time
-                      </h3>
-                      <p className={`${openSans.className} text-gray-600`}>
-                        Monday - Friday
-                      </p>
-                      <p className={`${openSans.className} text-sm text-gray-500 mt-1`}>
-                        9:00 AM - 6:00 PM GMT
-                      </p>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
 
